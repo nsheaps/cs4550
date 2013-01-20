@@ -1,0 +1,2502 @@
+[2013-01-15 16:43:56] [info] [50f5cd9cbab8f] User::install: Creating user related tables...
+[2013-01-15 16:43:56] [info] [50f5cd9cbab8f] User::install: User related tables created.
+[2013-01-15 16:43:56] [info] [50f5cd9cbab8f] Project::install: Creating project related tables...
+[2013-01-15 16:43:56] [info] [50f5cd9cbab8f] Project_User::install: Creating projectuser table...
+[2013-01-15 16:43:56] [info] [50f5cd9cbab8f] Project_User::install: Projectuser table created.
+[2013-01-15 16:43:56] [info] [50f5cd9cbab8f] Project::install: All project related tables created.
+[2013-01-15 16:43:56] [info] [50f5cd9cbab8f] SystemSettings::install: Creating systemsettings table...
+[2013-01-15 16:43:56] [info] [50f5cd9cbab8f] SystemSettings::install: systemsettings table created.
+[2013-01-15 16:43:57] [info] [50f5cd9cbab8f] Installer: Installation successful.
+[2013-01-15 16:44:02] [error] [50f5cda276360] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 16:44:02] [info] [50f5cda276360] webHandler: Authentication required. [URI=/]
+[2013-01-15 16:44:12] [info] [50f5cdac93fc3] AjaxManager::authentication: User 'root' authenticated, taking you to your dashboard. Stand by...
+[2013-01-15 16:44:15] [error] [50f5cdafd2fd4] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 16:44:18] [error] [50f5cdb245c7c] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 16:45:23] [info] [50f5cdf3c31fc] Project_Log::install: Creating projectlog1 table...
+[2013-01-15 16:45:23] [info] [50f5cdf3c31fc] Project_Log::install: projectlog1 table created.
+[2013-01-15 16:45:23] [info] [50f5cdf3c31fc] Project_Build::install: Creating projectbuild1 related tables...
+[2013-01-15 16:45:24] [info] [50f5cdf3c31fc] Build_SpecialTask_PhpDepend::install: Creating phpdepend1 table...
+[2013-01-15 16:45:24] [info] [50f5cdf3c31fc] Build_SpecialTask_PhpDepend::install: phpdepend1 table created.
+[2013-01-15 16:45:24] [info] [50f5cdf3c31fc] Project_Build::install: projectbuild1 related tables created.
+[2013-01-15 16:45:27] [error] [50f5cdf77ca66] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 16:45:52] [error] [50f5ce10a2fc5] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 16:45:55] [error] [50f5ce132dbe7] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 16:57:34] [error] [50f5d0ce6e68a] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 16:57:37] [error] [50f5d0d1e6cad] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 17:00:26] [error] [50f5d17ada869] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 17:00:28] [error] [50f5d17c17e35] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 17:00:28] [error] [50f5d17c5005c] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 17:00:44] [error] [50f5d18c06f1b] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 17:00:44] [error] [50f5d18c3bfb9] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 17:00:44] [info] [50f5d18c3bfb9] webHandler: Authentication required. [URI=/]
+[2013-01-15 17:00:45] [error] [50f5d18dcab7e] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-15 17:01:04] [info] [50f5d1a020780] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:05] [info] [50f5d1a1bc054] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:14] [info] [50f5d1aa98a72] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:49] [info] [50f5d1cdca124] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:51] [info] [50f5d1cf34ca5] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:51] [info] [50f5d1cf431da] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:51] [info] [50f5d1cf4f5e4] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:51] [info] [50f5d1cf7f979] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:51] [info] [50f5d1cfa0082] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:51] [info] [50f5d1cfdc251] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:52] [info] [50f5d1d012407] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:52] [info] [50f5d1d069b49] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:52] [info] [50f5d1d083ce7] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:52] [info] [50f5d1d09abdf] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:52] [info] [50f5d1d0c2c80] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:52] [info] [50f5d1d0e33a5] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:53] [info] [50f5d1d11ab8c] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:53] [info] [50f5d1d13974a] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:53] [info] [50f5d1d155abe] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:53] [info] [50f5d1d174712] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:53] [info] [50f5d1d19d209] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:53] [info] [50f5d1d1bc460] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-15 17:01:53] [info] [50f5d1d1edce2] ajaxHandler: Authentication is required on all ajax requests. [URI=/ajax/registration/]
+[2013-01-16 00:09:23] [error] [50f63603a3b56] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:09:23] [info] [50f63603a3b56] webHandler: Authentication required. [URI=/]
+[2013-01-16 00:09:31] [info] [50f6360b56894] AjaxManager::authentication: User 'nsheaps' failed to authenticate. Please try again.
+[2013-01-16 00:09:36] [info] [50f63610846fd] AjaxManager::authentication: User 'nsheaps' failed to authenticate. Please try again.
+[2013-01-16 00:09:38] [info] [50f636126f8ed] AjaxManager::authentication: User 'root' authenticated, taking you to your dashboard. Stand by...
+[2013-01-16 00:09:42] [error] [50f6361620a00] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:09:51] [error] [50f6361fa748b] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:09:53] [error] [50f63621ce494] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:10:57] [error] [50f6366186c6c] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:11:01] [error] [50f63665a8454] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:11:18] [error] [50f63676234e9] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:11:43] [error] [50f6368f7764c] Project::resetScmConnector: Could not recreate sources dir for project. [PID=1]
+[2013-01-16 00:11:45] [error] [50f63691d0c29] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:11:48] [error] [50f63694a75e9] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:07] [error] [50f636e3b3f8e] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:12] [info] [50f636e84212d] Framework_Process::run: Executing 'git clone git@github.com:nsheaps/nathanheapscom.git /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f5cdf39d7d48.63573314/wc/'
+[2013-01-16 00:13:12] [error] [50f636e84212d] ScmConnector_Git::checkout: Could not check out remote repository. [COMMAND="git clone git@github.com:nsheaps/nathanheapscom.git /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f5cdf39d7d48.63573314/wc/"] [RET=128] [STDERR="Host key verification failed.
+fatal: The remote end hung up unexpectedly
+"] [STDOUT="Cloning into /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f5cdf39d7d48.63573314/wc...
+"]
+[2013-01-16 00:13:12] [info] [50f636e84212d] Project::build: Couldn't checkout sources. [PROJECTID=1]
+[2013-01-16 00:13:14] [error] [50f636eaef454] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:18] [error] [50f636ee240c4] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:21] [error] [50f636f177cef] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:33] [error] [50f636fd0a858] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:34] [error] [50f636fe07ad7] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:40] [error] [50f6370402a14] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:54] [error] [50f637124f87b] Project::resetScmConnector: Could not recreate sources dir for project. [PID=1]
+[2013-01-16 00:13:56] [error] [50f637141e86e] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:13:57] [info] [50f63715cc580] Framework_Process::run: Executing 'git clone https://github.com/nsheaps/nathanheapscom.git /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f5cdf39d7d48.63573314/wc/'
+[2013-01-16 00:14:20] [error] [50f6372c91a29] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:15:01] [error] [50f6375591adc] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:15:05] [error] [50f63759e0ca1] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:15:08] [error] [50f6375c92933] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:15:09] [error] [50f6375deaad3] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:15:17] [error] [50f637656f200] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:15:21] [error] [50f63769e2902] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:16:59] [error] [50f637cb475c2] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:17:02] [error] [50f637ce8cad5] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:17:04] [error] [50f637d0269bf] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:17:23] [error] [50f637e387151] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:20:19] [error] [50f638935ce5b] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:20:19] [info] [50f638935ce5b] Not found. [URI=/phpinfo.php/] [USER=root]
+[2013-01-16 00:20:25] [error] [50f638995dbe8] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:20:25] [info] [50f638995dbe8] Not found. [URI=/phpinfo.php/] [USER=root]
+[2013-01-16 00:22:01] [error] [50f638f958123] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:27:29] [error] [50f63a418ae33] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:27:46] [error] [50f63a5210690] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:28:32] [error] [50f63a80c31f3] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php-cli -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:28:34] [error] [50f63a82a3c8c] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php-cli -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:28:36] [error] [50f63a84ed56a] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php-cli -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:28:40] [info] [50f63a88a579e] Project::build: Project is currently building, or is queued for building. [PROJECTID=1]
+[2013-01-16 00:28:43] [error] [50f63a8bee209] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php-cli -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:29:02] [error] [50f63a9e5dbbc] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php-cli -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:29:02] [info] [50f63a9e5dbbc] Not found. [URI=/ajax/project/build/] [USER=root]
+[2013-01-16 00:30:24] [error] [50f63af029a32] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php]
+[2013-01-16 00:30:28] [info] [50f63af43bac1] Project::build: Project is currently building, or is queued for building. [PROJECTID=1]
+[2013-01-16 00:30:31] [error] [50f63af7813d0] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=php]
+[2013-01-16 00:31:02] [error] [50f63b169b341] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=ls]
+[2013-01-16 00:31:04] [error] [50f63b18e2fa7] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=ls]
+[2013-01-16 00:31:10] [error] [50f63b1e96350] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=ls]
+[2013-01-16 00:31:16] [error] [50f63b2476672] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=ls]
+[2013-01-16 00:34:01] [error] [50f63bc976fbc] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/local/lib/php-5.3.13/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 00:34:04] [info] [50f63bcc36745] Project::build: Project is currently building, or is queued for building. [PROJECTID=1]
+[2013-01-16 00:34:06] [error] [50f63bce66cdf] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/local/lib/php-5.3.13/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 15:44:46] [error] [50f7113e4a82a] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 15:44:50] [info] [50f7114227249] Project::build: Project is currently building, or is queued for building. [PROJECTID=1]
+[2013-01-16 15:44:52] [error] [50f71145023af] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 16:35:39] [error] [50f71d2b7fba5] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 16:35:39] [info] [50f71d2b7fba5] webHandler: Authentication required. [URI=/]
+[2013-01-16 18:00:37] [error] [50f731156cc94] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:00:47] [error] [50f7311f3b8fd] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:00:51] [error] [50f73123a96e6] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:01:09] [error] [50f7313541040] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:01:18] [info] [50f7313eec1a2] Project_Log::install: Creating projectlog2 table...
+[2013-01-16 18:01:19] [info] [50f7313eec1a2] Project_Log::install: projectlog2 table created.
+[2013-01-16 18:01:19] [info] [50f7313eec1a2] Project_Build::install: Creating projectbuild2 related tables...
+[2013-01-16 18:01:19] [info] [50f7313eec1a2] Build_SpecialTask_PhpDepend::install: Creating phpdepend2 table...
+[2013-01-16 18:01:19] [info] [50f7313eec1a2] Build_SpecialTask_PhpDepend::install: phpdepend2 table created.
+[2013-01-16 18:01:19] [info] [50f7313eec1a2] Project_Build::install: projectbuild2 related tables created.
+[2013-01-16 18:01:22] [error] [50f731424e546] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:01:24] [error] [50f731447d1ad] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:01:31] [error] [50f7314b66071] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:02:27] [error] [50f73183aac40] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:02:31] [error] [50f731870a0da] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:02:56] [error] [50f731a02974f] Project::resetScmConnector: Could not recreate sources dir for project. [PID=2]
+[2013-01-16 18:02:59] [error] [50f731a35dc18] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:03:02] [info] [50f731a65d334] Framework_Process::run: Executing 'ls /; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/'
+[2013-01-16 18:03:03] [error] [50f731a65d334] ScmConnector_Git::checkout: Could not check out remote repository. [COMMAND="ls /; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/"] [RET=128] [STDERR="fatal: Fetch attempted without a local repo
+"] [STDOUT="bin
+boot
+cdrom
+dev
+etc
+hermes
+home
+lib
+opt
+proc
+sbin
+selinux
+sys
+tmp
+usr
+var
+Cloning into /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc...
+"]
+[2013-01-16 18:03:03] [info] [50f731a65d334] Project::build: Couldn't checkout sources. [PROJECTID=2]
+[2013-01-16 18:03:06] [error] [50f731aa66176] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:04:03] [error] [50f731e3b9b18] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:04:06] [info] [50f731e6e662d] Framework_Process::run: Executing 'ls /usr/local/lib/php-5.3.13/; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/'
+[2013-01-16 18:04:07] [error] [50f731e6e662d] ScmConnector_Git::checkout: Could not check out remote repository. [COMMAND="ls /usr/local/lib/php-5.3.13/; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/"] [RET=128] [STDERR="fatal: Fetch attempted without a local repo
+"] [STDOUT="bin
+etc
+include
+lib
+man
+Cloning into /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc...
+"]
+[2013-01-16 18:04:07] [info] [50f731e6e662d] Project::build: Couldn't checkout sources. [PROJECTID=2]
+[2013-01-16 18:04:10] [error] [50f731eab0799] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:04:24] [error] [50f731f8629e7] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:04:25] [info] [50f731f9e461d] Framework_Process::run: Executing 'ls /usr/local/lib/php-5.3.13/lib; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/'
+[2013-01-16 18:04:26] [error] [50f731f9e461d] ScmConnector_Git::checkout: Could not check out remote repository. [COMMAND="ls /usr/local/lib/php-5.3.13/lib; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/"] [RET=128] [STDERR="fatal: Fetch attempted without a local repo
+"] [STDOUT="php
+php.ini
+Cloning into /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc...
+"]
+[2013-01-16 18:04:26] [info] [50f731f9e461d] Project::build: Couldn't checkout sources. [PROJECTID=2]
+[2013-01-16 18:04:29] [error] [50f731fd25602] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:06:15] [error] [50f73267b18a8] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:06:17] [info] [50f73269b613f] Framework_Process::run: Executing 'ls /usr/local/bin; ls /usr/bin; ls /bin; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/'
+[2013-01-16 18:06:18] [error] [50f73269b613f] ScmConnector_Git::checkout: Could not check out remote repository. [COMMAND="ls /usr/local/bin; ls /usr/bin; ls /bin; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/"] [RET=128] [STDERR="fatal: Fetch attempted without a local repo
+"] [STDOUT="GET
+HEAD
+Magick++-config
+Magick-config
+POST
+SOAPsh.pl
+Wand-config
+XMLRPCsh.pl
+a2p
+animate
+bash2
+bdf2gdfont.pl
+benchmark_stemmers.plx
+c2ph
+chartex
+compare
+compile_encoding
+composite
+config_data
+conjure
+convert
+cpan
+cpansign
+curl
+dbfdump
+dbiprof
+dbiproxy
+dbish
+dbl2png
+display
+dprofpp
+enc2xs
+find2perl
+generate_tests.plx
+h2ph
+h2xs
+identify
+imgsize
+import
+indexdump
+instmodsh
+ipcount
+iptab
+jhead
+libnetcfg
+listaction
+listaction_d
+listfdb
+listjpeg
+listmp3
+listswf
+listswf_d
+lwp-download
+lwp-mirror
+lwp-request
+lwp-rget
+make_encmap
+makefdb
+makeswf
+map
+ming-config
+mirrorMappings
+mkCSGB2312
+mkdtdskel
+mkdtskel
+mkmapfile
+mkxmltype
+mogrify
+montage
+perl
+perl5.8.8
+perlbug
+perlcc
+perldoc
+perlivp
+php4
+php4-cli
+php4.4.4
+php4.4.4-cli
+php4.4.7
+php4.4.7-cli
+php5
+php5-cli
+php5.2.4
+php5.2.4-cli
+piconv
+pl2pm
+png2dbl
+png2swf
+pod2html
+pod2latex
+pod2man
+pod2text
+pod2usage
+podchecker
+podselect
+prove
+psed
+pstruct
+ptar
+ptardiff
+pwhich
+python
+python2.5
+raw2adpcm
+ruby
+ruby1.8
+s2p
+shasum
+snmpkey
+splain
+stream
+stubmaker.pl
+swftoperl
+swftophp
+swftopython
+umap
+which_pm
+xml_grep
+xml_merge
+xml_pp
+xml_spellcheck
+xml_split
+xmlpretty
+xmlsemdiff
+xpath
+xql.pl
+xslt-parser
+xsubpp
+yapp
+ysh
+2to3
+2to3-2.6
+411toppm
+GET
+HEAD
+Mail
+POST
+X
+X11
+Xorg
+[
+a2p
+a2ping
+ac
+aclocal
+aclocal-1.11
+aclocal-1.4
+acpi_listen
+addftinfo
+addpart
+addr2line
+afm2afm
+afm2pl
+afm2tfm
+afmtodit
+aleph
+allcm
+allec
+allneeded
+amstex
+amuFormat.sh
+animate
+annotate
+annotate-output
+anytopnm
+appres
+apropos
+apt-cache
+apt-cdrom
+apt-config
+apt-extracttemplates
+apt-ftparchive
+apt-get
+apt-key
+apt-mark
+apt-sortpkgs
+aptitude
+aptitude-create-state-bundle
+aptitude-curses
+aptitude-run-state-bundle
+ar
+arch
+archpath
+as
+asciitopgm
+asn1Coding
+asn1Decoding
+asn1Parser
+aspell
+aspell-import
+at
+atktopbm
+atobm
+atop
+atopsar
+atq
+atrm
+autoconf
+autoheader
+autoinst
+autom4te
+automake
+automake-1.11
+automake-1.4
+autopoint
+autoreconf
+autoscan
+autoupdate
+awk
+axi-cache
+base64
+basename
+bashbug
+batch
+bbox
+bc
+bdftogd
+bdftogd-gif
+bdftopcf
+bdftops
+bdftruncate
+berkeley_db4.2_svc
+bibtex
+bibtex.original
+bibtex8
+bioradtopgm
+bison
+bison.yacc
+bitmap
+bmptopnm
+bmptoppm
+bmtoa
+brushtopbm
+bsd-from
+bsd-mailx
+bsd-write
+bts
+build-rdeps
+buildhash
+c++
+c++filt
+c2ph
+c89
+c89-gcc
+c99
+c99-gcc
+c_rehash
+cachepic
+cal
+calendar
+camlp4
+camlp4o
+camlp4o.opt
+camlp4r
+camlp4r.opt
+canberra-gtk-play
+capinfos
+captoinfo
+catchsegv
+catman
+cc
+ccmakedep
+cdbdump
+cdbget
+cdbmake
+cdbstats
+chage
+chardet
+charset
+chattr
+chcon
+chdist
+check_nfs_mounts.pl
+check_nfs_timeouts.pl
+checkbashisms
+checkinstall
+chem
+chfn
+chkdupexe
+chrt
+chsh
+chvt
+ci
+cjpeg
+cksum
+clc-lisp
+clc-register-user-package
+clc-slime
+clc-unregister-user-package
+cleanlinks
+clear
+clear_console
+clisp
+cmap2enc
+cmp
+cmuwmtopbm
+co
+codepage
+col
+colcrt
+collateindex.pl
+colrm
+column
+comm
+compare
+compile_et
+compose
+composite
+config_data
+conjure
+consolechars
+convert
+corelist
+cowpoke
+cpan
+cpan2dist
+cpanp
+cpanp-run-perl
+cpp
+cpp-3.3
+cpp-3.4
+cpp-4.1
+cpp-4.3
+cpp-4.4
+cronolog
+cronosplit
+crontab
+crypt
+cslatex
+csplain
+csplit
+csslint-0.6
+ctangle
+ctie
+ctstat
+curl
+cut
+cvs-debc
+cvs-debi
+cvs-debrelease
+cvs-debuild
+cvt
+cweave
+db2dvi
+db2html
+db2pdf
+db2ps
+db2rtf
+db4.2_archive
+db4.2_checkpoint
+db4.2_deadlock
+db4.2_dump
+db4.2_load
+db4.2_printlog
+db4.2_recover
+db4.2_stat
+db4.2_upgrade
+db4.2_verify
+db_dump185
+dbilogstrip
+dbiprof
+dbiproxy
+dbl2png
+dbus-cleanup-sockets
+dbus-daemon
+dbus-launch
+dbus-monitor
+dbus-send
+dbus-uuidgen
+dccleancrw
+dcfujigreen
+dcfujiturn
+dcfujiturn16
+dch
+dcmd
+dcontrol
+dcparse
+dcraw
+dd-list
+ddate
+deallocvt
+deb-reversion
+debc
+debchange
+debcheckout
+debclean
+debcommit
+debconf
+debconf-apt-progress
+debconf-communicate
+debconf-copydb
+debconf-escape
+debconf-get-selections
+debconf-getlang
+debconf-gettextize
+debconf-loadtemplate
+debconf-mergetemplate
+debconf-set-selections
+debconf-show
+debconf-updatepo
+debdiff
+debi
+debpkg
+debrelease
+debrsign
+debsign
+debsnap
+debuild
+defoma
+defoma-app
+defoma-font
+defoma-hints
+defoma-id
+defoma-psfont-installer
+defoma-subst
+defoma-user
+delpart
+desktop2menu
+detex
+devnag
+dget
+dh
+dh_auto_build
+dh_auto_clean
+dh_auto_configure
+dh_auto_install
+dh_auto_test
+dh_autotools-dev_restoreconfig
+dh_autotools-dev_updateconfig
+dh_bash-completion
+dh_bugfiles
+dh_builddeb
+dh_clean
+dh_compress
+dh_desktop
+dh_fixperms
+dh_gconf
+dh_gencontrol
+dh_icons
+dh_install
+dh_installcatalogs
+dh_installchangelogs
+dh_installcron
+dh_installdeb
+dh_installdebconf
+dh_installdefoma
+dh_installdirs
+dh_installdocs
+dh_installemacsen
+dh_installexamples
+dh_installgsettings
+dh_installifupdown
+dh_installinfo
+dh_installinit
+dh_installlogcheck
+dh_installlogrotate
+dh_installman
+dh_installmanpages
+dh_installmenu
+dh_installmime
+dh_installmodules
+dh_installpam
+dh_installppp
+dh_installtex
+dh_installudev
+dh_installwm
+dh_installxfonts
+dh_installxmlcatalogs
+dh_link
+dh_lintian
+dh_listpackages
+dh_makeshlibs
+dh_md5sums
+dh_movefiles
+dh_perl
+dh_perl_dbi
+dh_prep
+dh_pycentral
+dh_pysupport
+dh_python
+dh_python2
+dh_scrollkeeper
+dh_shlibdeps
+dh_strip
+dh_suidregister
+dh_testdir
+dh_testroot
+dh_ucf
+dh_undocumented
+dh_usrlocal
+diff
+diff2patches
+diff3
+dig
+dircolors
+dirname
+discover-config
+disdvi
+diskd
+diskseekd
+display
+djpeg
+docbook-to-man
+docbook2dvi
+docbook2html
+docbook2man
+docbook2pdf
+docbook2ps
+docbook2rtf
+docbook2tex
+docbook2texi
+docbook2txt
+dotlockfile
+dpkg
+dpkg-architecture
+dpkg-buildflags
+dpkg-buildpackage
+dpkg-checkbuilddeps
+dpkg-deb
+dpkg-depcheck
+dpkg-distaddfile
+dpkg-divert
+dpkg-genbuilddeps
+dpkg-genchanges
+dpkg-gencontrol
+dpkg-gensymbols
+dpkg-maintscript-helper
+dpkg-mergechangelogs
+dpkg-name
+dpkg-parsechangelog
+dpkg-query
+dpkg-scanpackages
+dpkg-scansources
+dpkg-shlibdeps
+dpkg-source
+dpkg-split
+dpkg-statoverride
+dpkg-trigger
+dpkg-vendor
+dprofpp
+dscverify
+dselect
+dt2dv
+du
+dumpcap
+dumphint
+dumpkeys
+dumpsexp
+dv2dt
+dvi2fax
+dvi2tty
+dviasm
+dvibook
+dviconcat
+dvicopy
+dvihp
+dvilj
+dvilj2p
+dvilj4
+dvilj4l
+dvilj6
+dvilualatex
+dviluatex
+dvipdf
+dvipdfm
+dvipdfmx
+dvipdft
+dvipos
+dvips
+dvired
+dviselect
+dvitodvi
+dvitomp
+dvitype
+e2pall
+eatmydata
+ebb
+edit
+editcap
+editor
+editres
+eject
+enc2xs
+encode_keychange
+env
+envsubst
+eps2eps
+epsffit
+epspdf
+epspdftk
+epstopdf
+eqn
+eqn2graph
+equivs-build
+equivs-control
+esdcat
+esdctl
+esddsp
+esdfilt
+esdloop
+esdmon
+esdplay
+esdrec
+esdsample
+etex
+ex
+exifautotran
+exiv2
+expand
+expiry
+expr
+extractbb
+extractres
+eyuvtoppm
+factor
+faillog
+faked-sysv
+faked-tcp
+fakeroot
+fakeroot-sysv
+fakeroot-tcp
+fallocate
+fc-cache
+fc-cat
+fc-list
+fc-match
+fc-query
+fc-scan
+fdlist
+fdmount
+fdmountd
+fdrawcmd
+fdumount
+feynmf
+fiascotopnm
+fig4latex
+file
+find
+find2perl
+findaffix
+findhyph
+fitstopnm
+fix_bs_and_del
+fixdlsrps
+fixfmps
+fixmacps
+fixproc
+fixpsditps
+fixpspps
+fixscribeps
+fixtpps
+fixwfwps
+fixwpps
+fixwwps
+flex
+flex++
+flock
+floppycontrol
+floppymeter
+fmt
+fmtutil
+fmtutil-sys
+fold
+font2afm
+font2c
+font2psf
+fontinst
+fonttosfnt
+free
+freetype-config
+from
+fslsfonts
+fstobdf
+fstopgm
+ftdump1
+fterror
+ftlint1
+ftmetric
+ftp
+ftsbit
+ftstring1
+ftstrpnm
+ftstrtto
+fttimer1
+ftview1
+ftzoom
+funzip
+g++
+g++-3.3
+g++-4.3
+g++-4.4
+g3topbm
+gcc
+gcc-3.3
+gcc-3.4
+gcc-4.1
+gcc-4.3
+gcc-4.4
+gccbug-3.3
+gccbug-3.4
+gccbug-4.1
+gccmakedep
+gconf-merge-tree
+gconftool
+gconftool-2
+gcore
+gcov
+gcov-3.3
+gcov-3.4
+gcov-4.1
+gcov-4.3
+gcov-4.4
+gd2copypal
+gd2topng
+gdb
+gdbserver
+gdbtui
+gddemo-gif
+gdiffmk
+gdparttopng
+gdtopng
+gemtopbm
+gemtopnm
+gencat
+geoiplookup
+geoiplookup6
+geoipupdate
+geqn
+getafm
+getafm-freetype
+getbuildlog
+getconf
+getent
+getfdprm
+gethostip
+getkeycodes
+getnonfreefonts
+getnonfreefonts-sys
+getopt
+gettext
+gettext.sh
+gettextize
+gftodvi
+gftopk
+gftype
+ghostscript
+gif2dbl
+gif2mask
+giftogd
+giftopnm
+ginstall-info
+git
+git-receive-pack
+git-shell
+git-upload-archive
+git-upload-pack
+gmake
+gnuplot
+gnuplot-nox
+gold
+gouldtoppm
+gpasswd
+gpg
+gpg-error
+gpg-error-config
+gpg-zip
+gpgsplit
+gpgv
+gpic
+gprof
+grap2graph
+grep-excuses
+grn
+grodvi
+groff
+groffer
+grog
+grolbp
+grolj4
+grops
+grotty
+groups
+grub-bin2h
+grub-editenv
+grub-mkfont
+grub-mkimage
+grub-mkpasswd-pbkdf2
+grub-mkrelpath
+grub-mkrescue
+grub-script-check
+gs
+gsbj
+gsdj
+gsdj500
+gsftopk
+gslj
+gslp
+gsnd
+gtbl
+gtf
+gxditview
+h2ph
+h2xs
+hd
+head
+helpztags
+hexdump
+hipstopgm
+hmac256
+host
+hostid
+hpftodit
+html2ps
+html2text
+htop
+i386
+i486-linux-gnu-cpp
+i486-linux-gnu-cpp-3.3
+i486-linux-gnu-cpp-3.4
+i486-linux-gnu-cpp-4.1
+i486-linux-gnu-cpp-4.3
+i486-linux-gnu-cpp-4.4
+i486-linux-gnu-g++
+i486-linux-gnu-g++-3.3
+i486-linux-gnu-g++-4.3
+i486-linux-gnu-g++-4.4
+i486-linux-gnu-gcc
+i486-linux-gnu-gcc-3.3
+i486-linux-gnu-gcc-3.4
+i486-linux-gnu-gcc-4.1
+i486-linux-gnu-gcc-4.3
+i486-linux-gnu-gcc-4.4
+icc2ps
+icclink
+icctrans
+iceauth
+ico
+icombine
+icontopbm
+iconv
+id
+ident
+identify
+ifnames
+ifstat
+ijoin
+ilbmtoppm
+imake
+imgtoppm
+import
+includeres
+indxbib
+info
+infobrowser
+infocmp
+infokey
+infotocap
+innochecksum
+innotop
+install
+install-info
+installwatch
+instant
+instmodsh
+ionice
+iostat
+ipcmk
+ipcrm
+ipcs
+ipmitool
+iptables-xml
+isohybrid
+isohybrid.pl
+ispell
+ispell-wrapper
+jadetex
+jhead
+join
+jpegexiforient
+jpegicc
+jpegtopnm
+jpegtran
+json_xs
+jw
+kbd-config
+kbd_mode
+killall
+koi8rxterm
+kpseaccess
+kpsepath
+kpsereadlink
+kpsestat
+kpsetool
+kpsewhere
+kpsewhich
+kpsexpand
+krb5-config
+ksh
+labltk
+lacheck
+last
+lastb
+lastcomm
+lastlog
+latex
+latex2man
+lcf
+ld
+ld.bfd
+ld.gold
+ldapadd
+ldapcompare
+ldapdelete
+ldapexop
+ldapmodify
+ldapmodrdn
+ldappasswd
+ldapsearch
+ldapurl
+ldapwhoami
+ldd
+leaftoppm
+ledit
+less
+lessecho
+lessfile
+lesskey
+lesspipe
+lex
+lexgrog
+lft
+lft.db
+libgcrypt-config
+libmcrypt-config
+libnetcfg
+libpng-config
+libpng10-config
+libpng12-config
+libtool
+libtoolize
+libwmf-config
+licensecheck
+line
+link
+linux-boot-prober
+linux32
+linux64
+lispmtopgm
+list-unreleased
+listaction
+listaction_d
+listfdb
+listings-ext
+listjpeg
+listmp3
+listres
+listswf
+listswf_d
+lkbib
+lndir
+lnstat
+locale
+localedef
+lockfile-check
+lockfile-create
+lockfile-remove
+lockfile-touch
+loggen
+logger
+logname
+look
+lookbib
+lorder
+lsattr
+lsb_release
+lscpu
+lsinitramfs
+lsof
+lspci
+lspgpot
+lss16toppm
+lsusb
+lualatex
+luatex
+luit
+lwp-download
+lwp-dump
+lwp-mirror
+lwp-request
+lwp-rget
+lxterm
+lynx
+lynx.cur
+lz
+lzcat
+lzma
+lzmainfo
+m4
+macptopbm
+mag
+mail
+mail-lock
+mail-touchlock
+mail-unlock
+mailx
+make
+makedepend
+makefdb
+makeg
+makeglossaries
+makeindex
+makeinfo
+makestrs
+makeswf
+man
+mandb
+manhole
+manpage-alert
+manpath
+mass-bug
+mattrib
+mawk
+mbadblocks
+mbchk
+mcat
+mcd
+mcheck
+mclasserase
+mcomp
+mcookie
+mcopy
+mcrypt
+md5pass
+md5sum
+md5sum.textutils
+mdatopbm
+mdecrypt
+mdel
+mdeltree
+mdetect
+mdir
+mdu
+memcached
+memdiskfind
+merge
+mergecap
+mergechanges
+mergelib
+mesg
+mex
+mf
+mf-nowin
+mformat
+mfplain
+mft
+mgrtopbm
+minfo
+ming-config
+mk-build-deps
+mk_modmap
+mkbimage
+mkcamlp4
+mkdirhier
+mkdiskimage
+mkfifo
+mkfontdir
+mkfontscale
+mkgrkindex
+mkhtmlindex
+mkindex
+mkjobtexmf
+mkmanifest
+mkocp
+mkofm
+mkt1font
+mktap
+mktexfmt
+mktexlsr
+mktexmf
+mktexpk
+mktextfm
+mlabel
+mlock
+mm-config
+mmd
+mmount
+mmove
+mmroff
+mogrify
+montage
+mpartition
+mpost
+mpstat
+mrd
+mren
+msgattrib
+msgcat
+msgcmp
+msgcomm
+msgconv
+msgen
+msgexec
+msgfilter
+msgfmt
+msggrep
+msginit
+msgmerge
+msgunfmt
+msguniq
+mshowfat
+mtools
+mtoolstest
+mtrace
+mtvtoppm
+mtype
+multitail
+munchlist
+mxtar
+my_print_defaults
+myisam_ftdump
+mysql
+mysql_client_test
+mysql_client_test_embedded
+mysql_config
+mysql_find_rows
+mysql_fix_extensions
+mysql_waitpid
+mysqlaccess
+mysqladmin
+mysqlanalyze
+mysqlbug
+mysqlcheck
+mysqldump
+mysqldumpslow
+mysqlimport
+mysqloptimize
+mysqlrepair
+mysqlreport
+mysqlshow
+mysqlslap
+mysqltest_embedded
+mzip
+namecheck
+namei
+nano
+nawk
+ncal
+ncftp
+ncftp3
+ncftpbatch
+ncftpbookmarks
+ncftpget
+ncftpls
+ncftpput
+ncftpspooler
+ncurses5-config
+ncursesw5-config
+neotoppm
+neqn
+net-snmp-config
+netkit-ftp
+newgrp
+newsbody
+nex
+ngettext
+ngrep
+nice
+nl
+nm
+nmudiff
+nohup
+nosetests
+nosetests-2.5
+notification-properties
+nproc
+nroff
+nsgmls
+nslookup
+nspr-config
+nstat
+nsupdate
+ntpdc
+ntpq
+ntpsweep
+ntptrace
+nvi
+nview
+objcopy
+objdump
+ocaml
+ocamlbrowser
+ocamlbuild
+ocamlbuild.byte
+ocamlbuild.native
+ocamlbyteinfo
+ocamlc
+ocamlcp
+ocamldebug
+ocamldep
+ocamldoc
+ocamldumpapprox
+ocamldumpobj
+ocamllex
+ocamlmklib
+ocamlmktop
+ocamlobjinfo
+ocamlopt
+ocamlplugininfo
+ocamlprof
+ocamlrun
+ocamlyacc
+oclock
+od
+odvicopy
+odvitype
+ofm2opl
+oldfind
+omfonts
+omshell
+open
+openjade
+openjade-1.4devel
+openssl
+openvt
+opl2ofm
+os-prober
+ot2kpx
+otangle
+otp2ocp
+outocp
+ovf2ovp
+ovp2ovf
+pager
+palmtopnm
+pamcut
+pamdeinterlace
+pamdice
+pamfile
+pamoil
+pamstack
+pamstretch
+pamstretch-gen
+paperconf
+parse-edid
+partx
+passwd
+paste
+patch
+patgen
+pathchk
+pbmclean
+pbmlife
+pbmmake
+pbmmask
+pbmpage
+pbmpscale
+pbmreduce
+pbmtext
+pbmtextps
+pbmto10x
+pbmtoascii
+pbmtoatk
+pbmtobbnbg
+pbmtocmuwm
+pbmtoepsi
+pbmtoepson
+pbmtog3
+pbmtogem
+pbmtogo
+pbmtoicon
+pbmtolj
+pbmtomacp
+pbmtomda
+pbmtomgr
+pbmtonokia
+pbmtopgm
+pbmtopi3
+pbmtoplot
+pbmtoppa
+pbmtopsg3
+pbmtoptx
+pbmtowbmp
+pbmtox10bm
+pbmtoxbm
+pbmtoybm
+pbmtozinc
+pbmupc
+pcimodules
+pcretest
+pcxtoppm
+pdb
+pdb2.4
+pdb2.5
+pdb2.6
+pdbtool
+pdf2dsc
+pdf2ps
+pdfannotextractor
+pdfatfi
+pdfclose
+pdfcrop
+pdfcslatex
+pdfcsplain
+pdfetex
+pdffonts
+pdfimages
+pdfinfo
+pdfjadetex
+pdflatex
+pdfmex
+pdfopen
+pdfopt
+pdfroff
+pdftex
+pdftexi2dvi
+pdftoabw
+pdftohtml
+pdftoppm
+pdftops
+pdftosrc
+pdftotext
+peekfd
+perl
+perl5.10.1
+perlbug
+perldoc
+perldoc.stub
+perlivp
+perltex
+perlthanks
+perror
+pf2afm
+pfb2pfa
+pfbtopfa
+pfbtops
+pfm2kpx
+pftp
+pg
+pgmbentley
+pgmcrater
+pgmedge
+pgmenhance
+pgmhist
+pgmkernel
+pgmnoise
+pgmnorm
+pgmoil
+pgmramp
+pgmslice
+pgmtexture
+pgmtofs
+pgmtolispm
+pgmtopbm
+pgmtoppm
+pgrep
+pi1toppm
+pi3topbm
+pic
+pic2graph
+pico
+piconv
+pidstat
+pinky
+pjtoppm
+pk2bm
+pkfix
+pkfix-helper
+pkg-config
+pkill
+pktogf
+pktype
+pl2pm
+plog
+plotchangelog
+pltotf
+pmap
+png2dbl
+png2swf
+pngtogd
+pngtogd2
+pngtopnm
+pnmalias
+pnmarith
+pnmcat
+pnmcolormap
+pnmcomp
+pnmconvol
+pnmcrop
+pnmcut
+pnmdepth
+pnmenlarge
+pnmfile
+pnmflip
+pnmgamma
+pnmhisteq
+pnmhistmap
+pnmindex
+pnminterp
+pnminterp-gen
+pnminvert
+pnmmargin
+pnmmontage
+pnmnlfilt
+pnmnoraw
+pnmnorm
+pnmpad
+pnmpaste
+pnmpsnr
+pnmquant
+pnmremap
+pnmrotate
+pnmscale
+pnmscalefixed
+pnmshear
+pnmsmooth
+pnmsplit
+pnmtile
+pnmtoddif
+pnmtofiasco
+pnmtofits
+pnmtojpeg
+pnmtopalm
+pnmtoplainpnm
+pnmtopng
+pnmtops
+pnmtorast
+pnmtorle
+pnmtosgi
+pnmtosir
+pnmtotiff
+pnmtotiffcmyk
+pnmtoxwd
+po2debconf
+pod2html
+pod2latex
+pod2man
+pod2text
+pod2usage
+podchecker
+podebconf-display-po
+podebconf-report-po
+podselect
+poff
+pon
+pooltype
+pospell
+post-grohtml
+pphs
+ppm3d
+ppmbrighten
+ppmchange
+ppmcie
+ppmcolormask
+ppmcolors
+ppmdim
+ppmdist
+ppmdither
+ppmfade
+ppmflash
+ppmforge
+ppmhist
+ppmlabel
+ppmmake
+ppmmix
+ppmnorm
+ppmntsc
+ppmpat
+ppmquant
+ppmquantall
+ppmqvga
+ppmrainbow
+ppmrelief
+ppmshadow
+ppmshift
+ppmspread
+ppmtoacad
+ppmtobmp
+ppmtoeyuv
+ppmtogif
+ppmtoicr
+ppmtoilbm
+ppmtojpeg
+ppmtoleaf
+ppmtolj
+ppmtolss16
+ppmtomap
+ppmtomitsu
+ppmtompeg
+ppmtoneo
+ppmtopcx
+ppmtopgm
+ppmtopi1
+ppmtopict
+ppmtopj
+ppmtopuzz
+ppmtorgb3
+ppmtosixel
+ppmtotga
+ppmtouil
+ppmtowinicon
+ppmtoxpm
+ppmtoyuv
+ppmtoyuvsplit
+ppmtv
+pr
+pre-grohtml
+precat
+preconv
+prename
+preunzip
+prezip
+prezip-bin
+print
+printafm
+printenv
+printerbanner
+printf
+prove
+prtstat
+ps2ascii
+ps2eps
+ps2epsi
+ps2frag
+ps2pdf
+ps2pdf12
+ps2pdf13
+ps2pdf14
+ps2pdfwr
+ps2pk
+ps2ps
+ps2ps2
+ps2txt
+ps4pdf
+psbook
+psed
+psfaddtable
+psfgettable
+psfstriptable
+psidtopgm
+pslatex
+psmerge
+psnup
+pspell-config
+psresize
+psselect
+pst2pdf
+pstoedit
+pstopnm
+pstops
+pstree
+pstree.x11
+pstruct
+ptar
+ptardiff
+ptked
+ptksh
+pts-subscribe
+pts-unsubscribe
+ptx
+purifyeps
+pwdx
+pxelinux-options
+py3_compilefiles
+py_compilefiles
+pycentral
+pyclean
+pycompile
+pydoc
+pydoc2.4
+pydoc2.5
+pydoc2.6
+pygettext
+pygettext2.4
+pygettext2.5
+pygettext2.6
+pyhtmlizer
+python
+python2.4
+python2.5
+python2.6
+pyversions
+qrttoppm
+ranlib
+rasttopnm
+raw2adpcm
+rawshark
+rawtopgm
+rawtoppm
+rc-alert
+rcp
+rcs
+rcsclean
+rcsdiff
+rcsfreeze
+rcsmerge
+rdjpgcom
+readelf
+readline-editor
+realpath
+recode-sr-latin
+red
+refer
+rename
+rename.ul
+renice
+reset
+resize
+rev
+revpath
+rgb3toppm
+rgrep
+rletopnm
+rlog
+rlogin
+rmadison
+rngtest
+roff2dvi
+roff2html
+roff2pdf
+roff2ps
+roff2text
+roff2x
+routef
+routel
+rpcgen
+rpcinfo
+rpdfcrop
+rrdcgi
+rrdtool
+rrdupdate
+rsh
+rstart
+rstartd
+rsync
+rtstat
+rubibtex
+rumakeindex
+run-mailcap
+run-with-aspell
+runcon
+rview
+rvim
+s2p
+sabcmd
+sablot-config
+sadf
+sar
+sar.sysstat
+savelog
+sbigtopgm
+scconf-bootinfo
+scconf-tool
+scp
+screendump
+script
+scriptreplay
+sdiff
+see
+select-default-iwrap
+sensible-browser
+sensible-editor
+sensible-pager
+seq
+sessreg
+setarch
+setfdprm
+setkeycodes
+setleds
+setlogcons
+setmetamode
+setpci
+setsid
+setterm
+setxkbmap
+sftp
+sg
+sgitopnm
+sgml2xml
+sgmldiff
+sgmlnorm
+sgmlspl
+sha1pass
+sha1sum
+sha224sum
+sha256sum
+sha384sum
+sha512sum
+shasum
+shcomp
+showcfont
+showchar
+showfont
+showglyphs
+showkey
+showrgb
+shred
+shuf
+si_lsimage
+simpdftex
+sirtopnm
+size
+skill
+slabtop
+sldtoppm
+slogin
+smicache
+smidiff
+smidump
+smilint
+smiquery
+smixlate
+smproxy
+snice
+snmpbulkget
+snmpbulkwalk
+snmpconf
+snmpdelta
+snmpdf
+snmpget
+snmpgetnext
+snmpinform
+snmpnetstat
+snmpset
+snmpstatus
+snmptable
+snmptest
+snmptranslate
+snmptrap
+snmpusm
+snmpvacm
+snmpwalk
+soelim
+sort
+spam
+spctoppm
+spent
+splain
+split
+splitfont
+splitindex
+sprof
+sputoppm
+sq
+ssh
+ssh-add
+ssh-agent
+ssh-argv0
+ssh-copy-id
+ssh-keygen
+ssh-keyscan
+ssh-vulnkey
+st4topgm
+startx
+stat
+stdbuf
+strace
+stream
+strings
+strip
+sum
+superformat
+svn
+svn-backup-dumps
+svn-bisect
+svn-clean
+svn-fast-backup
+svn-hot-backup
+svn-multi
+svn-populate-node-origins-index
+svn2cl
+svn_apply_autoprops
+svn_load_dirs
+svnadmin
+svnauthz-validate
+svndumpfilter
+svnlook
+svnmerge
+svnmucc
+svnpath
+svnserve
+svnsync
+svnversion
+svnwrap
+swftoperl
+swftophp
+swftopython
+synctex
+syslinux
+syslinux2ansi
+systemconfigurator
+t1asm-freetype
+tabs
+tac
+tagpending
+tail
+tangle
+tap2deb
+tap2rpm
+tapconvert
+tasksel
+taskset
+tbl
+tcdialog
+tclsh
+tclsh8.3
+tclsh8.4
+tclsh8.5
+teckit_compile
+tee
+telnet
+telnet.netkit
+test
+tex
+texconfig
+texconfig-dialog
+texconfig-sys
+texcount
+texdiff
+texdirflatten
+texdoc
+texdoctk
+texhash
+texi2dvi
+texi2pdf
+texindex
+texlinks
+texloganalyser
+texlua
+texluac
+text2pcap
+tfmtodit
+tftopl
+tgatoppm
+tgz
+thinkjettopbm
+thumbpdf
+tic
+tickadj
+tie
+tiffdiff
+tifficc
+tifftopnm
+timeout
+tkjpeg
+tload
+toe
+top
+touch
+tpic2pdftex
+tput
+tr
+traceproto
+traceproto.db
+traceroute
+traceroute-nanog
+traceroute.db
+traceroute6
+traceroute6.db
+transition-check
+traptoemail
+trial
+troff
+truncate
+tryaffix
+tset
+tshark
+tsort
+ttf2afm
+ttf2bdf
+ttf2pfb
+ttf2pk
+ttf2tfm
+ttfbanner
+ttfdump
+tty
+twistd
+type-handling
+tzselect
+ucf
+ucfq
+ucfr
+ucs2any
+ul
+unexpand
+unicode_start
+unicode_stop
+uniq
+unlink
+unlzma
+unshare
+unsq
+unxz
+unzip
+unzipsfx
+update-alternatives
+update-fmtutil
+update-fontlang
+update-gconf-defaults
+update-language
+update-language-dat
+update-language-def
+update-mime-database
+update-mime-database.real
+update-patterndb
+update-pciids
+update-perl-sax-parsers
+update-updmap
+updmap
+updmap-sys
+uptime
+usb-devices
+uscan
+users
+utf8mex
+uuidgen
+uupdate
+uxterm
+uz
+vftovp
+vi
+view
+viewres
+vim
+vim.basic
+vimdiff
+vimtutor
+vlna
+vmstat
+vnstat
+volname
+vpe
+vpl2ovp
+vpl2vpl
+vptovf
+vt-is-UTF8
+w
+w.procps
+w3c
+wall
+watch
+wbmptopbm
+wc
+weave
+webbot
+webgif
+weblint
+webpng
+wftopfa
+wget
+wget.orig
+whatis
+whereis
+which
+whiptail
+who
+who-uploads
+whoami
+whodepends
+widget
+winicontoppm
+wish
+wish8.3
+wish8.4
+wish8.5
+wnpp-alert
+wnpp-check
+word-list-compress
+write
+wrjpgcom
+wtpt
+www
+www-browser
+x-terminal-emulator
+x11perf
+x11perfcomp
+x86_64
+xargs
+xauth
+xbiff
+xbmtopbm
+xcalc
+xclipboard
+xclock
+xcmsdb
+xconsole
+xcursorgen
+xcutsel
+xdfcopy
+xdfformat
+xditview
+xdpyinfo
+xdriinfo
+xdvi
+xdvi-xaw
+xdvi.bin
+xdvipdfmx
+xedit
+xetex
+xev
+xeyes
+xfd
+xfontsel
+xfsinfo
+xgamma
+xgc
+xgettext
+xhost
+ximtoppm
+xinit
+xkbbell
+xkbcomp
+xkbevd
+xkbprint
+xkbvleds
+xkbwatch
+xkeystone
+xkill
+xload
+xlogo
+xlsatoms
+xlsclients
+xlsfonts
+xmag
+xman
+xmessage
+xmkmf
+xml2-config
+xmlwf
+xmodmap
+xmore
+xpdf
+xpmtoppm
+xprop
+xrandr
+xrdb
+xrefresh
+xset
+xsetmode
+xsetpointer
+xsetroot
+xslt-config
+xsm
+xstdcmap
+xsubpp
+xterm
+xtotroff
+xvidtune
+xvinfo
+xvminitoppm
+xwd
+xwdtopnm
+xwininfo
+xwud
+xxd
+xz
+xzcat
+xzcmp
+xzdiff
+xzegrep
+xzfgrep
+xzgrep
+xzless
+xzmore
+yacc
+ybmtopbm
+yes
+yuvsplittoppm
+yuvtoppm
+zabbix_agent
+zabbix_sender
+zdump
+zeisstopnm
+zip
+zipcloak
+zipgrep
+zipinfo
+zipnote
+zipsplit
+zsoelim
+zxpdf
+bash
+bunzip2
+busybox
+bzcat
+bzcmp
+bzdiff
+bzegrep
+bzexe
+bzfgrep
+bzgrep
+bzip2
+bzip2recover
+bzless
+bzmore
+cat
+chgrp
+chmod
+chown
+cp
+cpio
+dash
+date
+dd
+df
+dir
+dmesg
+dnsdomainname
+domainname
+echo
+ed
+egrep
+false
+fgconsole
+fgrep
+fuser
+grep
+gunzip
+gzexe
+gzip
+hostname
+ip
+kill
+ksh
+ksh93
+less
+lessecho
+lessfile
+lesskey
+lesspipe
+ln
+loadkeys
+login
+ls
+lsmod
+mkdir
+mknod
+mktemp
+more
+mount
+mountpoint
+mt
+mt-gnu
+mv
+nano
+nc
+nc.traditional
+netcat
+netstat
+nisdomainname
+pidof
+ping
+ping6
+ps
+pwd
+rbash
+readlink
+rm
+rmdir
+rnano
+run-parts
+sed
+sh
+sh.distrib
+sleep
+stty
+sync
+tailf
+tar
+tar.orig
+tempfile
+touch
+true
+umount
+uname
+uncompress
+vdir
+which
+ypdomainname
+zcat
+zcmp
+zdiff
+zegrep
+zfgrep
+zforce
+zgrep
+zless
+zmore
+znew
+Cloning into /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc...
+"]
+[2013-01-16 18:06:18] [info] [50f73269b613f] Project::build: Couldn't checkout sources. [PROJECTID=2]
+[2013-01-16 18:06:23] [error] [50f7326f7322d] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:07:52] [error] [50f732c8107f2] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:07:54] [info] [50f732ca78326] Framework_Process::run: Executing 'find / | grep php ; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/'
+[2013-01-16 18:08:04] [error] [50f732d4200d3] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:08:46] [error] [50f732ca78326] ScmConnector_Git::checkout: Could not check out remote repository. [COMMAND="find / | grep php ; git clone http://github.com/nsheaps/n8heaps.com /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc/"] [RET=128] [STDERR="find: `/proc/sys/kernel/grsecurity': Permission denied
+find: `/proc/sys/kernel/pax': Permission denied
+find: `/proc/bus': Permission denied
+find: `/proc/tty/driver': Permission denied
+find: `/dev/shm/cpud': Permission denied
+find: `/var/cache/cpud': Permission denied
+find: `/var/cache/ldconfig': Permission denied
+find: `/var/cache/apache': Permission denied
+find: `/usr/local/awstats/awstats-6.5': Permission denied
+find: `/hermes/bosweb25a': Permission denied
+find: `/hermes/bosoraweb036': Permission denied
+find: `/hermes/bosoraweb069': Permission denied
+find: `/hermes/bosoraweb005': Permission denied
+find: `/hermes/bosoraweb011': Permission denied
+find: `/hermes/bosoraweb047': Permission denied
+find: `/hermes/bosoraweb038': Permission denied
+find: `/hermes/bosoraweb030': Permission denied
+find: `/hermes/bosoraweb024': Permission denied
+find: `/hermes/bosoraweb062': Permission denied
+find: `/hermes/bosoraweb039': Permission denied
+find: `/hermes/bosoraweb015': Permission denied
+find: `/hermes/bosoraweb048': Permission denied
+find: `/hermes/bosoraweb071': Permission denied
+find: `/hermes/bosoraweb067': Permission denied
+find: `/hermes/bosoraweb070': Permission denied
+find: `/hermes/bosoraweb034': Permission denied
+find: `/hermes/bosoraweb026': Permission denied
+find: `/hermes/bosoraweb028': Permission denied
+find: `/hermes/bosoraweb056': Permission denied
+find: `/hermes/bosoraweb057': Permission denied
+find: `/hermes/bosoraweb077': Permission denied
+find: `/hermes/bosoraweb012': Permission denied
+find: `/hermes/bosoraweb052': Permission denied
+find: `/hermes/bosoraweb064': Permission denied
+find: `/hermes/bosoraweb025': Permission denied
+find: `/hermes/bosoraweb044': Permission denied
+find: `/hermes/bosoraweb078': Permission denied
+find: `/hermes/bosoraweb055': Permission denied
+find: `/hermes/bosoraweb063': Permission denied
+find: `/hermes/bosoraweb073': Permission denied
+find: `/hermes/bosoraweb040': Permission denied
+find: `/hermes/bosoraweb061': Permission denied
+find: `/hermes/bosoraweb009': Permission denied
+find: `/hermes/bosoraweb085': Permission denied
+find: `/hermes/bosoraweb084': Permission denied
+find: `/hermes/bosoraweb023': Permission denied
+find: `/hermes/bosweb01': Permission denied
+find: `/hermes/bosweb26a': Permission denied
+find: `/hermes/bosoraweb079': Permission denied
+find: `/hermes/bosweb': Permission denied
+find: `/hermes/bosoraweb083': Permission denied
+find: `/hermes/bosweb26c': Permission denied
+find: `/hermes/bosoraweb068': Permission denied
+find: `/hermes/bosoraweb022': Permission denied
+find: `/hermes/bosoraweb051': Permission denied
+find: `/hermes/sb_web': Permission denied
+find: `/hermes/bosoraweb042': Permission denied
+find: `/hermes/bosoraweb027': Permission denied
+find: `/hermes/bosoraweb043': Permission denied
+find: `/hermes/bosconf01': Permission denied
+find: `/hermes/bosoraweb004': Permission denied
+find: `/hermes/bosoraweb035': Permission denied
+find: `/hermes/bosoraweb021': Permission denied
+find: `/hermes/bosoraweb032': Permission denied
+find: `/hermes/bosoraweb076': Permission denied
+find: `/hermes/bosoraweb010': Permission denied
+find: `/hermes/bosoraweb086': Permission denied
+find: `/hermes/bosoraweb037': Permission denied
+find: `/hermes/bosoraweb020': Permission denied
+find: `/hermes/bosoraweb046': Permission denied
+find: `/hermes/bosoraweb081': Permission denied
+find: `/hermes/bosweb26d': Permission denied
+find: `/hermes/bosoraweb003': Permission denied
+find: `/hermes/bosoraweb082': Permission denied
+find: `/hermes/bosoraweb054': Permission denied
+find: `/hermes/bosoraweb050': Permission denied
+find: `/hermes/bosoraweb053': Permission denied
+find: `/hermes/bosoraweb059': Permission denied
+find: `/hermes/bosoraweb065': Permission denied
+find: `/hermes/bosoraweb002': Permission denied
+find: `/hermes/bosoraweb016': Permission denied
+find: `/hermes/bosoraweb006': Permission denied
+find: `/hermes/bosweb26b': Permission denied
+find: `/hermes/bosoraweb007': Permission denied
+find: `/hermes/bosoraweb074': Permission denied
+find: `/hermes/bosoraweb033': Permission denied
+find: `/hermes/bosoraweb075': Permission denied
+find: `/hermes/bosoraweb080': Permission denied
+find: `/hermes/bosoraweb008': Permission denied
+find: `/hermes/bosweb25c': Permission denied
+find: `/hermes/bosoraweb072': Permission denied
+find: `/hermes/bosoraweb014': Permission denied
+find: `/hermes/sb_conf': Permission denied
+find: `/hermes/bosoraweb013': Permission denied
+find: `/hermes/bosweb25b': Permission denied
+find: `/hermes/bosoraweb017': Permission denied
+find: `/hermes/bosoraweb019': Permission denied
+find: `/hermes/bosoraweb058': Permission denied
+find: `/hermes/bosoraweb031': Permission denied
+find: `/hermes/bosconf': Permission denied
+find: `/hermes/bosoraweb001': Permission denied
+find: `/hermes/bosoraweb041': Permission denied
+find: `/hermes/bosoraweb018': Permission denied
+find: `/hermes/bosoraweb066': Permission denied
+find: `/hermes/bosoraweb049': Permission denied
+find: `/hermes/bosoraweb000': Permission denied
+find: `/hermes/bosoraweb029': Permission denied
+find: `/hermes/bosoraweb045': Permission denied
+find: `/hermes/bosoraweb060': Permission denied
+find: `/etc/lvm/cache': Permission denied
+fatal: Fetch attempted without a local repo
+"] [STDOUT="/var/cache/dictionaries-common/sqspell.php
+Cloning into /home/users/web/b1980/ipg.nathanheapscom/ci.nathanheaps.com/data/projects/50f7313ed2ff28.08838408/wc...
+"]
+[2013-01-16 18:08:46] [info] [50f732ca78326] Project::build: Couldn't checkout sources. [PROJECTID=2]
+[2013-01-16 18:09:53] [error] [50f7334172bf3] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:09:58] [error] [50f7334690410] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
+[2013-01-16 18:10:03] [error] [50f7334b81be4] Framework_Process::isRunning: Could not query system for running executable. [EXECUTABLE=/usr/bin/php -c /opt/users/ipg/n/a/ipg.nathanheapscom/php53/php.ini]
