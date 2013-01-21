@@ -1,0 +1,857 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%;
+	background: #E8EBEF;
+	color: #333333;
+}
+
+p {
+	margin: 0px;
+}
+
+h1, h2, h3 {
+ font-family: helvetica, arial, sans-serif;
+ font-weight: bold;
+ font-size: 18px;
+ /*line-height: 200%;*/
+ margin-bottom: 10px;
+ text-decoration: none;
+}
+
+h1 {
+ text-transform: uppercase;
+ text-align: left;
+ color: #7CA1D0;
+ /*margin-top: 10px; changed to reflect line-height deletion */
+ margin: 0px 0px 10px 0px;
+}
+
+/* h2 and h3 are similar except that h2 has a gray dotted line  
+underneath */
+
+h2 {
+ text-align: left;
+ color: #999;
+ padding-bottom: 0px;
+}
+
+h3 {
+ text-align: left;
+ color: #999;
+}
+
+h4 {
+	font-size:10px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	color: #003F5F;
+	line-height: 1.4em;
+}
+
+h4 span.headline {
+	font-weight: normal;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-size:10px;
+	font-weight: bold;
+	color: #666;
+	line-height: 1.8em;
+}
+
+.eventtime {
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	color: #666;
+	margin: 0px;
+	line-height: 1.8em
+}
+
+p, blockquote, ul, ol {
+	margin-bottom: 1.5em;
+	line-height: 1.8em;
+}
+
+blockquote, ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-right: 3em;
+}
+
+a, a:link, a:hover, a:visited {
+	color: #003F5F;
+	text-deocration: underline;
+}
+
+/* begin homepage news titles with the same treatment as sidebar titles */
+
+p.newsblurb a, p.newsblurb a:link, p.newsblurb a:visited {
+	color: #003F5F;
+	text-decoration: none;
+  font-weight: bold;
+}
+
+p.newsblurb a:hover {
+	text-decoration: underline;
+}
+
+/* end homepage news titles rules */
+
+
+
+h4 a, h4 a:link, h4 a:visited {
+	text-decoration: none;
+}
+
+h4 a:hover {
+	text-decoration: underline;
+}
+
+img { border: none; }
+
+hr { display: none; }
+
+.hr {
+	height: 36px;
+	margin-bottom: 15px;
+	background: url("../images/img06.gif") repeat-x left center;
+}
+
+/* Header */
+
+#header {
+	width: 800px;
+	height: 120px;
+	margin-bottom: 20px;
+	margin-left: 16px;
+	margin-right: 16px;
+	background: #FFFFFF;
+	margin: 0 auto;
+}
+
+/* Logo - Uses image replacement technique*/
+
+#logo {
+	float: left;
+	width: 192px;
+	text-align: center;
+	padding-top: 40px;	
+	padding-left: 16px;
+	height: 62px;
+	position: relative;
+	font-weight: bold;
+    font-size: 14px;
+	color: #666;
+	}
+#logo span {
+	background: url("images/logo.jpg") no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	}
+
+#logo a {
+	text-decoration: none;
+	color: #666;
+	border: 0;
+}
+
+/* User Navigation */
+
+#usernav {
+    float: right;
+    padding-top: 72px;
+    width: 560px;
+    font-size: 10px;
+    
+}
+
+#usernav ul {
+    margin: 0;
+    background: transparent url("../images/usernav-dots.gif") repeat-x 0 0;
+    text-align: center;
+    list-style: none;
+    height: 28px;
+    padding-top: 5px;
+	margin-right: 16px;
+}
+
+#usernav li {
+    display: inline;
+}
+
+#usernav a, #usernav a:visited, #usernav a:link {
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0B65B3;
+}
+
+#usernav a:hover {
+    text-decoration: underline;
+}
+
+#usernav a.current:link, #usernav a.current:visited,
+#usernav a.current:hover, #usernav a.current:active {
+    color: #003F5F;
+    text-decoration: none;
+}
+
+/* Page */
+
+#page {
+	width: 768px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 20px;
+}
+
+#page #panoramic {
+	padding: 0px;
+	margin: 0px 0px;
+	float: right;
+	width: 768px;
+	border: 0px;
+}
+
+#page #generic {
+	float: right;
+	padding: -2px 0px;
+	margin: 0px;
+	width: 536px; /* Max 544, decrease to increase padding */
+	border: 0px;
+}	
+
+#content {
+	float: right;
+	width: 544px;
+	margin: 0px;
+}
+
+#content #onecol {
+	float: left;
+	width: 512px;
+	padding: 15px 16px 0px 16px;
+}
+
+#content #twocol {
+	float: left;
+	width: 314px;
+	padding: 15px 16px 0px 16px;
+}
+
+#content #onecol h2, #content #twocol h2 {
+	border-bottom: dotted 1px #999;
+}	
+
+/* Content */
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 198px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+}
+
+#sidebar img {
+	margin: 0px 0px 10px 0px;	
+	padding: 0px 10px 0px 10px;
+}
+
+#sidebar img.apply {
+	padding: 0px;
+	margin: 0px;
+}
+
+#sidebar p {
+	margin: 0px;	
+	padding: 0px 10px;
+}
+
+#sidebar h2 {
+	width: 178px;
+	margin: 15px 10px 10px 10px;
+	border-bottom: dotted 1px #999;
+}
+
+#sidebar h2.aboutluzzi {
+	color: #999;
+	border-bottom: 0px;
+}
+
+#sidebar h2.aboutluzzi a:link, #sidebar h2.aboutluzzi a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+#sidebar h2.aboutluzzi a:hover, #sidebar h2.aboutluzzi a:active {
+	color: #999;
+	text-decoration: underline;
+}
+
+#sidebar h4 {
+	font-size:10px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	color: #003F5F;
+	line-height: 1.4em;
+	width: 178px;
+	margin: 0px 10px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar div.eventtime {
+	padding: 0px 10px;
+}
+
+#sidebar blockquote {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#sidebar a {
+	color: #FFFFFF;
+}
+
+#sidebar a:link, #sidebar a:visited, #sidebar a:hover, #sidebar a:active {
+	color: #003F5F;
+}
+
+/**********************************
+* Begin code for tertiary nav *
+**********************************/
+
+#sidebar #rightnav {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+	width: 198px;
+	border-style: solid; 
+	border-color: #ffffff; border-width: 0px 0px 0px 0px;
+}
+
+#sidebar #rightnav ul { 
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#sidebar #rightnav ul li { 
+	margin: 0px;
+	padding: 5px 10px;
+}
+
+#sidebar #rightnav ul li.section { 
+	background-color: #3B73B9;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+}
+
+#sidebar #rightnav ul li.section a:link, 
+#sidebar #rightnav ul li.section a:visited { 
+	color: #FFF;
+	text-decoration: none;
+}
+
+#sidebar #rightnav ul li.section a:hover, 
+#sidebar #rightnav ul li.section a:active { 
+	color: #FFF;
+	text-decoration: underline;
+}
+
+#sidebar #rightnav ul li.subnav a.sidebar-subnav-active:link, 
+#sidebar #rightnav ul li.subnav a.sidebar-subnav-active:visited { 
+	color: #3B73B9;
+	text-decoration: none;
+}
+
+#sidebar #rightnav ul li.subnav a.sidebar-subnav-active:hover, 
+#sidebar #rightnav ul li.subnav a.sidebar-subnav-active:active { 
+	color: #3B73B9;
+	text-decoration: underline;
+}
+
+#sidebar #rightnav ul li.subnav a.sidebar-subnav-inactive:link, 
+#sidebar #rightnav ul li.subnav a.sidebar-subnav-inactive:visited { 
+	color: #333;
+	text-decoration: none;
+}
+
+#sidebar #rightnav ul li.subnav a.sidebar-subnav-inactive:hover, 
+#sidebar #rightnav ul li.subnav a.sidebar-subnav-inactive:active { 
+	color: #333;
+	text-decoration: underline;
+}
+
+ /***********************************************************
+* Start code for links in the top right corner of the page *
+***********************************************************/
+#toplinks {
+width:800px;
+height: 16px;
+text-align: right;
+padding:2px 0px;
+background-color:#7CA1D0;
+margin: 0 auto;
+}
+
+.toplinks-inside {
+padding-right: 10px;
+padding-left: 10px;
+padding-bottom: 0px;
+padding-top:0px;
+border-style: solid;
+border-color: #FFFFFF;
+border-width: 0px 1px 0px 0px;
+}
+
+.toplinks-inside-right {
+padding-top:0px;
+padding-left: 10px;
+padding-bottom: 0px;
+padding-right: 20px;
+}
+
+.toplinks-link {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+line-height: 150%;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+a:link.toplinks-link {
+text-decoration:none;
+color:#FFFFFF;
+outline: none;
+font-weight:normal;
+font-size: 10px;
+}
+
+a:visited.toplinks-link {
+text-decoration:none;
+color:#FFFFFF;
+font-weight:normal; 
+font-size: 10px;
+}
+
+a:hover.toplinks-link {
+text-decoration:underline;
+color:#FFFFFF;
+}
+
+a:active.toplinks-link {
+text-decoration:underline;
+color:#FFFFFF;
+}
+
+/*********************************************************
+* End code for links in the top right corner of the page *
+*********************************************************/
+
+/************************
+* Start code for footer *
+************************/
+#footer	{
+	clear:both;
+	width: 800px;
+	text-align: center;
+	color: #999999;
+	padding: 10px 0px;
+	margin: 0 auto;
+}
+				
+#footer li	{
+	display: inline;
+}
+	
+#footer a:link, #footer a:visited {
+	color: #999999;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #999999;
+	text-decoration: underline;
+}
+	
+#footer p {
+	margin: 0px;
+	line-height: 175%;
+	color: #999999;
+}
+
+/************************
+* End code for footer *
+************************/ 
+
+#apply
+{
+position:absolute;
+right:0;
+top:0;
+}
+
+
+
+/**********************************
+* Begin code for bar on left side *
+**********************************/
+
+#left-sidebar {
+	float: left;
+	width: 224px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#left-sidebar img {
+	border: 0px;
+	padding-top: 8px;
+}
+
+#navigation	{
+	float: left;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	width: 222px;
+}
+					
+#navigation ul#leftnav	{
+	margin: 10px;
+	padding: 0px;
+	line-height: 120%;
+	list-style:none;
+}
+						
+#navigation ul#leftnav li {
+	display:block;
+	margin:0;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+}
+						
+#navigation ul#leftnav li.current {
+	display: block;
+	padding-bottom: 0px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+}
+
+#navigation ul#leftnav li a {
+	display: block;
+	padding: 10px 5px 10px 14px;
+	text-decoration: none;
+	_height: 1em;  /*needed for IE6*/
+
+}
+
+#navigation ul#leftnav li.current a {
+	border-bottom: 0px solid black;
+}
+
+#navigation ul#leftnav li a:hover {
+	display: block;
+}
+
+#navigation ul#leftnav li.current a:link,
+#navigation ul#leftnav li.current a:link {
+	display: block;
+}
+
+#navigation ul#leftnav li.current ul#left-subnav	{
+	font-size: 10px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px 0px 3px 28px;
+	line-height: 120%;
+	list-style:none;
+}
+
+#navigation ul#leftnav li.current ul#left-subnav li	{
+	margin: 0px;
+	font-weight: normal;
+	display: inline;
+}
+
+#navigation ul#leftnav li.current ul#left-subnav li.selected	{
+	margin: 0px;
+	display: inline;
+}
+
+#navigation ul#leftnav li.current ul#left-subnav li a	{
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 6px 0px;
+	border: 0px;
+}
+
+
+/**********************************
+* Begin code for arrows list *
+**********************************/
+
+#arrows-list
+{
+padding-top: 0px;
+padding-bottom: 0px;
+margin: 0px;
+padding-left: 10px;
+list-style: none;
+font-size: 11px;
+}
+
+#arrows-list li 
+{
+padding-top: 2px;
+padding-left: 20px;
+padding-bottom: 15px;
+background-image: url("../images/list-arrow.gif");
+background-repeat: no-repeat;
+background-position: 0 .5em;
+}
+
+#arrows-list a {
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #003F5F;
+	border: 0px;
+	
+}
+
+#arrows-list a:hover {
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #003F5F;
+	border: 0px;
+	background: #F2F4F5;
+}
+
+/**********************************
+* Begin code for gray tables *
+**********************************/
+.graytable {
+background-color: #FFF;
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+
+table.graytable tr td {
+	padding: 5px 6px 5px 4px;
+	margin: 2px;
+	border: 0px;
+	background-color: #F2F4F5;
+	vertical-align: top;
+}
+
+.apply-column-heading {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 120%;
+	margin: 10px 0px;
+	text-decoration: none;
+	text-align: center;
+	color: #7CA1D0;
+}
+
+.apply-step {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 120%;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 10px;
+	text-decoration: none;
+	text-align: left;
+	color: #7CA1D0;
+}
+
+.apply-line {
+	display: block;
+	color: #FFF;
+	background-color: #FFF;
+	width: 130px;
+	margin: 10px 10px;
+	padding: 0px;
+	border: 2px solid #FFF;
+}
+
+.apply-text {
+	padding: 0px 10px 0px 14px;
+}
+	
+table {
+	border-collapse: collapse;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc; 
+	color: #333;
+}
+
+table caption {
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin-bottom: 10px;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #ccc;
+	color: #666;
+}
+
+table a {
+	text-decoration: none;
+	border-bottom: 1px dotted #f60;
+	font-weight: bold;
+}
+
+table a:hover {
+	text-decoration: none;
+	background: #f60;
+}
+
+table tr th a {
+	border-bottom: 1px dotted #369;
+}
+
+table tr th a:hover {
+	color: #fff;
+	background: #369;
+}
+
+table thead tr th {
+	text-transform: uppercase;
+	background: #e2e2e2;
+	color: #003F5F;
+}
+
+table tfoot tr th, table tfoot tr td {
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+}
+
+table tfoot tr th {
+	width: 20%;
+}
+
+table tfoot tr td {
+	width: 80%;
+}
+
+table td, table th {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+	line-height: 1.8em;
+	vertical-align: top;
+	width: 20%;
+}
+
+table tr.odd th, table tr.odd td {
+	background: #efefef;
+}
+
+/*************************************************************************************************************************************
+* Begin code for form styling. onecol class is for a form in a one column layout. twocol is for a form in a two column layout *
+*************************************************************************************************************************************/
+
+form.onecol {
+border: 0;
+width: 500px;
+}
+
+form.twocol {
+border: 0;
+width: 500px;
+}
+
+form input {
+ background-color: #fff;
+}
+
+form fieldset {
+  margin-bottom: 10px;
+  border: 0;
+}
+
+form.onecol legend {
+  padding: 10px;
+  font-weight: bold;
+  background-image: url("%243302");
+  background-repeat: no-repeat;
+  background-position: .5em;
+  background-color: #f2f4f5;
+  text-indent: 1.5em;
+  width: 500px;
+}
+
+
+
+form label {
+  display: inline-block;
+  line-height: 1.8;
+  vertical-align: top;
+}
+form fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+form fieldset li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+form fieldset fieldset {
+  border: none;
+  margin: 3px 0 0;
+}
+form fieldset fieldset legend {
+  padding: 0 0 5px;
+  font-weight: normal;
+}
+form label {
+  display: block;
+  width: auto;
+}
+form em {
+  font-weight: bold;
+  font-style: normal;
+  color: #3B73B9;
+}
+form label {
+  width: 120px; /* Width of labels */
+}
+form fieldset fieldset label {
+  margin-left: 123px; /* Width plus 3 (html space) */
+}
