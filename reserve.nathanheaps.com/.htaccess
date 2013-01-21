@@ -8,11 +8,11 @@ RewriteRule ^api/([a-z]+).php 			    api/$1.php [L]
 RewriteRule ^favicon.ico$ 					static/img/favicon.ico [L]
 
 RewriteRule ^$ 								static/html/index.htm [L]
-RewriteRule ^venues$ 						/venues/ [R=301]
 RewriteRule ^venues/$ 						static/html/venues.htm [L]
-RewriteRule ^venue/(.*)$ 					/venue/$1/ [R=301]
-RewriteRule ^venue/(.*)/$ 					static/html/venue/$1/venuInfo.htm [L]
-RewriteRule ^venue/(.*)/contact				static/html/venue/$1/venuContact.htm [L]
+RewriteRule ^venues$ 						/venues/ [R=301]
+RewriteRule ^venue/([a-zA-Z0-9]*)/$			static/html/venue/$1/venuInfo.htm [L]
+RewriteRule ^venue/([a-zA-Z0-9]*)$ 			/venue/$1/ [R=301]
+RewriteRule ^venue/([a-zA-Z0-9]*)/contact	static/html/venue/$1/venuContact.htm [L]
 
 
 RewriteRule ^(.*)$ 							$1 [L]
