@@ -2,7 +2,12 @@ Options +FollowSymLinks
 
 RewriteEngine on
 RewriteBase /
-RewriteRule ^/(fonts|img|js|css)/(.*) static/$1/$2 [L]
+
+RewriteRule ^/$ 				static/html/index.htm [L]
 RewriteRule ^/(.*)\.(htm|html) static/html/$1.$2 [L]
+
+
+
+RewriteRule ^/(fonts|img|js|css)/(.*) static/$1/$2 [L]
 RewriteRule ^/favicon\.ico static/img/favicon.ico [L]
 RewriteRule ^/api/([a-z]+)\.php api/$1.php [L]
