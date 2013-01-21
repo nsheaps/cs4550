@@ -8,7 +8,9 @@ RewriteRule ^api/([a-z]+).php 			    api/$1.php [L]
 RewriteRule ^favicon.ico$ 					static/img/favicon.ico [L]
 
 RewriteRule ^$ 								static/html/index.htm [L]
-RewriteRule ^list/$ 						static/html/list.htm [L]
+RewriteRule ^venues/$ 						static/html/venues.htm [L]
+RewriteRule ^venue/(.*)/$ 					static/html/venue/$1/venuInfo.htm [L]
+RewriteRule ^venue/(.*)/contact				static/html/venue/$1/venuContact.htm [L]
 
 
 RewriteRule ^(.*)$ 							$1 [L]
