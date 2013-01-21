@@ -124,7 +124,7 @@ hr { display: none; }
 .hr {
 	height: 36px;
 	margin-bottom: 15px;
-	background: url("../images/img06.gif") repeat-x left center;
+	background: url("/img/img06.gif") repeat-x left center;
 }
 
 /* Header */
@@ -154,7 +154,7 @@ hr { display: none; }
 	color: #666;
 	}
 #logo span {
-	background: url("images/logo.jpg") no-repeat;
+	background: url("/img/logo.jpg") no-repeat;
 	position: absolute;
 	width: 100%;
 	height: 100px;
@@ -178,7 +178,7 @@ hr { display: none; }
 
 #usernav ul {
     margin: 0;
-    background: transparent url("../images/usernav-dots.gif") repeat-x 0 0;
+    background: transparent url("/img/usernav-dots.gif") repeat-x 0 0;
     text-align: center;
     list-style: none;
     height: 28px;
@@ -633,7 +633,7 @@ font-size: 11px;
 padding-top: 2px;
 padding-left: 20px;
 padding-bottom: 15px;
-background-image: url("../images/list-arrow.gif");
+background-image: url("/img/list-arrow.gif");
 background-repeat: no-repeat;
 background-position: 0 .5em;
 }

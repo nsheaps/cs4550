@@ -21,7 +21,7 @@
 
 #navigation ul#leftnav li a {
 	color: #666;
-	background: #FFF url('../images/ffffff.gif') repeat-x bottom left;
+	background: #FFF url('/img/ffffff.gif') repeat-x bottom left;
 	border-top: 1px dotted #999;
 }
 
@@ -46,7 +46,7 @@ padding:0 0 3px 15px;
 }
 
 #navigation ul#leftnav li.current ul#left-subnav {
-	background: #FFF url('../images/ffffff.gif') repeat-x bottom left;
+	background: #FFF url('/img/ffffff.gif') repeat-x bottom left;
 }
 
 #navigation ul#leftnav li.current ul#left-subnav li.current a:link {
@@ -55,7 +55,7 @@ padding:0 0 3px 15px;
 
 #navigation ul#leftnav li.current ul#left-subnav li a	{
 	background-color: #FFF;
-	  background: url(../images/sidebar_arrow.gif) no-repeat left 3px;
+	  background: url('/img/sidebar_arrow.gif') no-repeat left 3px;
       padding-left: 12px;
 }
 
@@ -131,7 +131,7 @@ width:800px;
 	color: #666;
 	}
 #logo span {
-	background: url("../images/logo.gif") no-repeat;
+	background: url("/img/logo.gif") no-repeat;
 	position: absolute;
 	width: 100%;
 	height: 100px;
@@ -155,7 +155,7 @@ width:800px;
 
 #usernav ul {
     margin: 0;
-    background: transparent url("../images/usernav-dots.gif") repeat-x 0 0;
+    background: transparent url("/img/usernav-dots.gif") repeat-x 0 0;
     text-align: right;
     list-style: none;
     height: 28px;
@@ -230,7 +230,7 @@ padding:0px;
 #sidebar ul li a {
 	display: block;
 	padding: 0px 0px 0px 15px;
-	background: url(../images/sidebar_arrow.gif) no-repeat left 5px;
+	background: url('/img/sidebar_arrow.gif') no-repeat left 5px;
 	width: 160px;
 	text-decoration: none;
 	color: #000;
@@ -255,13 +255,13 @@ padding:0px;
 	margin-top: 5px;
 	voice-family: "\"}\"";
 	voice-family:inherit;
-    background: url(../images/twocol_arrow.gif) no-repeat left 5px;
+    background: url('img/twocol_arrow.gif') no-repeat left 5px;
     padding: 0px 0px 0px 15px;}
 						
 #twocol ul li a, #onecol ul li a {
 	display: block;
 	padding: 0px 0px 0px 15px;
-	background: url(../images/twocol_arrow.gif) no-repeat left 5px;
+	background: url('img/twocol_arrow.gif') no-repeat left 5px;
 	text-decoration: none;
 	color: #000;
 }
