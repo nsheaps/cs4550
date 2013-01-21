@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule (fonts|imgs|js|css)/(.*) www/$1/$2 [L]
+RewriteRule ajax src/handlers/ajaxHandler.php [L]
+RewriteRule favicon\.ico www/imgs/favicon.ico [L]
+RewriteRule .* src/handlers/webHandler.php [L]
