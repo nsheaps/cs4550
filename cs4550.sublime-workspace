@@ -12,50 +12,55 @@
 	"buffers":
 	[
 		{
-			"contents": "",
-			"file": "reserve.nathanheaps.com/index.html",
-			"file_size": 27,
-			"file_write_time": 130031966516747171,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows",
-				"name": "test"
-			}
-		},
-		{
 			"file": "reserve.nathanheaps.com/.htaccess",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 625,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 981 files for \".htaccess\"\n\nC:\\Users\\Nathan\\Dropbox\\Web Development\\cs4550\\ci.nathanheaps.com\\HELP.md:\n   56  \n   57   1.  Your web server's configuration must allow you to specify per\n   58:      directory .htaccess files and mod_rewrite directives within them.\n   59       For this you need to have at least \"AllowOverride FileInfo\". Also,\n   60       enable \"Options FollowSymLinks\" and \"DirectoryIndex index.php\". If\n\nC:\\Users\\Nathan\\Dropbox\\Web Development\\cs4550\\ci.nathanheaps.com\\index.php:\n   47  \n   48  //\n   49: // Make sure no previous .htaccess file is present here and refuse to\n   50  // run if we can't delete it. If present, our DOCUMENT_ROOT and\n   51  // SCRIPT_FILENAME might become poluted, breaking Cintient afterwards.\n   52  //\n   53: if (is_file(dirname(__FILE__) . DIRECTORY_SEPARATOR . '.htaccess')) {\n   54:   if (!@unlink(dirname(__FILE__) . DIRECTORY_SEPARATOR . '.htaccess')) {\n   55:     die(\"An .htaccess file is present in Cintient's directory and couldn't be removed. Please remove it manually and try again.\");\n   56    }\n   57  }\n   ..\n   82  $defaults['configurationSampleFile'] = $defaults['configurationDir'] . 'cintient.conf.sample';\n   83  $defaults['configurationNewFile'] = $defaults['configurationDir'] . 'cintient.conf.php';\n   84: $defaults['htaccessFile'] = dirname(__FILE__) . DIRECTORY_SEPARATOR . '.htaccess';\n   85  define('CINTIENT_INSTALLER_VERSION', '1.0.0-RC1');\n   86  \n   ..\n  210    $msg[0] = \"You cannot change the dir, just enable write permissions there.\";\n  211    $msg[1] = \"Ready.\";\n  212:   $fd = @fopen(dirname(__FILE__) . DIRECTORY_SEPARATOR . '.htaccess', 'a+');\n  213    if ($fd === false) {\n  214      $ok = false;\n  ...\n  299  \n  300    //\n  301:   // Write the .htaccess file\n  302    //\n  303:   $file = dirname(__FILE__) . DIRECTORY_SEPARATOR . '.htaccess';\n  304    $fd = @fopen($file, 'w');\n  305    if ($fd !== false) {\n  ...\n  313    } else {\n  314      $ok = false;\n  315:     $msg = \"Couldn't create the .htaccess file in \" . dirname(__FILE__) . DIRECTORY_SEPARATOR;\n  316      sendResponse($ok, $msg);\n  317    }\n  ...\n  642  ?>\n  643                  <div class=\"item clearfix inputCheckOnChange<?php echo ($ok ? ' success' : ' fail'); ?>\" id=\"htaccessFile\">\n  644:                   <label for=\"htaccessFile\">.htaccess</label>\n  645                    <div class=\"input\">\n  646                      <input class=\"span6\" type=\"text\" name=\"htaccessFile\" value=\"<?php echo $defaults['htaccessFile']; ?>\" disabled=\"disabled\" />\n\nC:\\Users\\Nathan\\Dropbox\\Web Development\\cs4550\\ci.nathanheaps.com\\README.md:\n   72  \n   73   1.  Your web server's configuration must allow you to specify per\n   74:      directory .htaccess files and mod_rewrite directives within them.\n   75       For this you need to have at least \"AllowOverride FileInfo\". Also,\n   76       enable \"Options FollowSymLinks\" and \"DirectoryIndex index.php\". If\n\n12 matches across 3 files\n",
+			"file": "reserve.nathanheaps.com/static/html/venues.htm",
 			"settings":
 			{
-				"buffer_size": 2941,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
+				"buffer_size": 9562,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "ci.nathanheaps.com/.htaccess",
+			"file": "reserve.nathanheaps.com/static/html/index.htm",
 			"settings":
 			{
-				"buffer_size": 229,
-				"line_ending": "Unix"
+				"buffer_size": 8326,
+				"line_ending": "Windows",
+				"name": "index.html"
 			}
 		},
 		{
-			"file": "test.sublime-build",
+			"file": "reserve.nathanheaps.com/static/css/neu1.css",
 			"settings":
 			{
-				"buffer_size": 28,
-				"line_ending": "Windows",
-				"name": "untitled.sublime-build"
+				"buffer_size": 14168,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "reserve.nathanheaps.com/static/css/events.css",
+			"settings":
+			{
+				"buffer_size": 6103,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "#reservationSystem{\n	margin-top: 10px;\n	padding-left: 10px;\n}\n\n",
+			"file": "reserve.nathanheaps.com/static/css/venuereservation.css",
+			"file_size": 64,
+			"file_write_time": 130032170014514403,
+			"settings":
+			{
+				"buffer_size": 63,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -195,6 +200,11 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/cs4550.sublime-project",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/test.sublime-build",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/ci.nathanheaps.com/.htaccess",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/index.html",
+		"/C/Users/Nathan/AppData/Roaming/Sublime Text 2/Packages/User/open cmd prompt.sublime-build",
 		"/C/Users/Nathan/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/Users/Nathan/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
 		"/C/Users/Nathan/Dropbox/Web Development/cs4550/ci.nathanheaps.com/src/config/cintient.conf.php",
@@ -207,7 +217,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"C:\\Users\\Nathan\\Dropbox\\Web Development\\cs4550\\ci.nathanheaps.com"
@@ -218,6 +228,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"twoco",
+			"/img",
+			"images",
 			".htaccess",
 			"apache_get",
 			"get_dnode",
@@ -239,15 +252,15 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "reserve.nathanheaps.com/index.html",
+					"file": "reserve.nathanheaps.com/.htaccess",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 625,
 						"regions":
 						{
 						},
@@ -260,8 +273,7 @@
 						],
 						"settings":
 						{
-							"auto_name": "test",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -271,10 +283,10 @@
 				},
 				{
 					"buffer": 1,
-					"file": "reserve.nathanheaps.com/.htaccess",
+					"file": "reserve.nathanheaps.com/static/html/venues.htm",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 9562,
 						"regions":
 						{
 						},
@@ -287,77 +299,23 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "reserve.nathanheaps.com/static/html/index.htm",
 					"settings":
 					{
-						"buffer_size": 2941,
+						"buffer_size": 8326,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										216,
-										225
-									],
-									[
-										558,
-										567
-									],
-									[
-										824,
-										833
-									],
-									[
-										904,
-										913
-									],
-									[
-										938,
-										947
-									],
-									[
-										1359,
-										1368
-									],
-									[
-										1623,
-										1632
-									],
-									[
-										1744,
-										1753
-									],
-									[
-										1831,
-										1840
-									],
-									[
-										1995,
-										2004
-									],
-									[
-										2303,
-										2312
-									],
-									[
-										2700,
-										2709
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
@@ -368,65 +326,89 @@
 						],
 						"settings":
 						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+							"auto_name": "index.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1593.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "ci.nathanheaps.com/.htaccess",
+					"file": "reserve.nathanheaps.com/static/css/neu1.css",
 					"settings":
 					{
-						"buffer_size": 229,
+						"buffer_size": 14168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								3876,
+								3883
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4654.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "test.sublime-build",
+					"file": "reserve.nathanheaps.com/static/css/events.css",
 					"settings":
 					{
-						"buffer_size": 28,
+						"buffer_size": 6103,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28,
-								28
+								4301,
+								4262
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4285.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "reserve.nathanheaps.com/static/css/venuereservation.css",
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -468,6 +450,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 201.0
+	},
 	"output.git":
 	{
 		"height": 124.0
@@ -501,6 +487,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 198.0,
 	"status_bar_visible": true
 }

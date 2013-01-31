@@ -7,12 +7,13 @@ RewriteRule ^(fonts|img|js|css)/(.*) 		static/$1/$2 [L]
 RewriteRule ^api/([a-z]+).php 			    api/$1.php [L]
 RewriteRule ^favicon.ico$ 					static/img/favicon.ico [L]
 
-RewriteRule ^$ 								static/html/index.htm [L]
-RewriteRule ^venues/$ 						static/html/venues.htm [L]
+# RewriteRule ^$ 								static/html/index.htm [L]
+RewriteRule ^$ 								include/index.php [L]
+RewriteRule ^contact$ 						/contact/ [R=301]
+RewriteRule ^contact/$ 						include/contact.php [L]
 RewriteRule ^venues$ 						/venues/ [R=301]
-RewriteRule ^venue/([a-zA-Z0-9]+)/$			static/html/venue/$1/venueInfo.htm [L]
+RewriteRule ^venues/$ 						static/html/venues.htm [L]
 RewriteRule ^venue/([a-zA-Z0-9]+)$ 			/venue/$1/ [R=301]
+RewriteRule ^venue/([a-zA-Z0-9]+)/$			static/html/venue/$1/venueInfo.htm [L]
 RewriteRule ^venue/([a-zA-Z0-9]+)/contact	static/html/venue/$1/venueContact.htm [L]
 
-
-RewriteRule ^(.*)$ 							$1 [L]

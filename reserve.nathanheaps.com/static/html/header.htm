@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><?php echo $tpl['PAGE_TITLE']?></title>
+
+	<link type="text/css" rel="stylesheet" href="/css/master.css" />
+	<?php 
+		foreach ($tpl["CUSTOM_CSS"] as $href){
+			echo "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . $href . "\" />";
+		}
+	?>
+
+	<script type="text/javascript" src="/js/master.js"></script>
+	<?php 
+		foreach ($tpl["CUSTOM_JS"] as $href){
+			echo "<script type=\"text\/javascript\" src=\"" . $href . "\"></script>";
+		}
+	?>
+</head>
+<body>
+	<div id="page-wrapper">
+		<header class="content-wrapper cf">
+
+			<div class="logo"></div>
+		</header>
+
+		<nav class="content-wrapper cf">
+			<div class="bounding-box">
+				<ul class="user-actions cf">
+					<!-- not logged in, no system yet -->
+					<li>Login</li>
+				</ul>
+
+				<ul class="cf">
+					<li><a href="/"         <?php if (strcmp($tpl['PAGE_NAME'], "home") == 0){ echo "class=\"active\""; }?>      >Home</a></li>
+					<li><a href="/venues/"  <?php if (strcmp($tpl['PAGE_NAME'], "venuelist") == 0){ echo "class=\"active\""; }?> >Venues</a></li>
+					<li><a href="/contact/" <?php if (strcmp($tpl['PAGE_NAME'], "contact") == 0){ echo "class=\"active\""; }?>   >Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id="main-content">
+		<!-- END HEADER -->
+		<?php /*
+		The content wrapper and bounding box are in the page HTML because index has a unique body.
+		*/
+		?>

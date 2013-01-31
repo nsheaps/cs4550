@@ -1,0 +1,9 @@
+#pic-span{
+    margin-bottom:20px; 
+    background: url('/img/frontpg/damore_mckim.jpg') no-repeat;
+    width: 960px;
+    height: 296px;
+    -webkit-border-radius:4px; 
+       -moz-border-radius:4px; 
+            border-radius:4px; 
+}

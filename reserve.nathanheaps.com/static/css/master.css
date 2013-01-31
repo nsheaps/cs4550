@@ -1,0 +1,159 @@
+/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/* clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.cf:before, .cf:after { content:""; display:table; } .cf:after { clear:both; } /* For IE 6/7 (trigger hasLayout) */ .cf { *zoom:1; }
+
+/* sticky footer - http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
+html,body{
+    height: 100%; /* req'd for sticky footer */
+}
+#page-wrapper{
+    min-height:100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px;
+}
+
+.push{
+    height: 150px;
+}
+footer{
+    height: 87px; /*height - border - padding = 100 - 3 - 10 = 87*/
+}
+
+body{
+    background: #ececec;
+    color:#656565;
+    font: 14px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.content-wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 15px 0 15px;
+}
+
+header .logo{
+    background: url('/img/logo.png') no-repeat;
+    width:344px;
+    height:62px;
+}
+
+nav{
+    padding: 0 0 20px;
+
+    font-size:16px;
+}
+
+nav .bounding-box{
+    /* give the nav a gradient, fallback in .bounding-box */
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f0f0f0));
+    background-image: -webkit-linear-gradient(#fbfbfb,#f0f0f0);
+    background-image: -moz-linear-gradient(#fbfbfb,#f0f0f0);
+    background-image: -o-linear-gradient(#fbfbfb,#f0f0f0);
+    background-image: linear-gradient(#fbfbfb,#f0f0f0);
+
+    padding: 10px 25px;
+}
+
+nav .user-actions{
+    float:right;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+
+nav ul li{
+    float:left;
+    padding:0 10px;
+    border-right: 1px solid #ccc;
+}
+nav ul li:first-child{
+    padding-left:0;
+}
+nav ul li:last-child{
+    padding-right:0;
+    border-right:none;
+}
+
+nav ul li a{
+    color:#869da8;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:#adc2cb;
+}
+nav ul li a.active{
+    color: #c00000;
+}
+
+footer{
+    background-color: #636363;
+    color:#cfcfcf;
+    padding-top: 10px;
+    border-top: 3px solid #777;
+    overflow: hidden
+}
+
+footer .created-by{
+    float: left;
+}
+
+footer .addl-footer{
+    float:right;
+    width: 700px;
+    text-align:center;
+}
+
+footer .addl-footer .addl-links ul{
+    list-style: none;
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+footer .addl-footer .addl-links ul li{
+    float:left;
+    padding: 0 5px;
+    border-right: 1px solid #888888;
+}
+
+footer .addl-footer .addl-links ul li:last-child{
+    border-right: none;
+}
+
+.bounding-box{
+    padding:20px;
+    background: #fcfcfc;
+    border: 1px solid #ebebeb;
+    -webkit-border-radius:4px;
+       -moz-border-radius:4px;
+            border-radius:4px;
+    -webkit-box-shadow: #dadada 0 1px 3px;
+       -moz-box-shadow: #dadada 0 1px 3px;
+            box-shadow: #dadada 0 1px 3px;
+}
+
+.bounding-box .header{
+    font-size: 18px;
+    margin-bottom:1em;
+    color: #cc0000;
+    text-transform: uppercase;
+    padding-bottom:;
+}
+
+p{
+    margin-bottom: 1em;
+}
+
+a{
+    text-decoration: none;
+    color:#33F;
+}
