@@ -1,7 +1,9 @@
 <?php
 require('./venuemap.php');
 
-$venueId = explode("/", $_SERVER["REQUEST_URI"])[2];
+$url = explode("/", $_SERVER["REQUEST_URI"]);
+$venueId = $url[2];
+
 $venueName = $venueList[$venueId];
 $tpl = array(
 	'PAGE_NAME' => "venuecontact-". $venueId,
