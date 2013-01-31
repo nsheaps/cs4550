@@ -1,0 +1,29 @@
+a.venue{
+	display:block;
+	height: 70px;
+	padding:10px;
+	clear:both;
+	border-bottom: 1px solid #e6e6e6;
+}
+a.venue:hover{
+	background-color:#f6f6f6;
+}
+a.venue:last-child{
+	border-bottom: none;
+}
+
+a.venue .venue-img{
+	float:left;
+	width: 150px;
+	height: 70px;
+}
+
+a.venue .venue-info{
+	float:right;
+	width: 725px;
+}
+
+a.venue .venue-info .venue-title{
+	font-size: 18px;
+	color: #CC0000;
+}
