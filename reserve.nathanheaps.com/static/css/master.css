@@ -103,6 +103,10 @@ footer{
     overflow: hidden
 }
 
+footer a{
+    color:#AAF;
+}
+
 footer .created-by{
     float: left;
 }

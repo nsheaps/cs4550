@@ -1,4 +1,5 @@
 <?php
+require('./venuemap.php');
 $tpl = array(
 	'PAGE_NAME' => "venuelist",
 	'PAGE_TITLE' => "On-campus Venues",

@@ -6,214 +6,24 @@
 
 		<div class="header"><?php echo $tpl['PAGE_HEADER'] ?></div>
 
-		<div class="venues">			<a class="venue" href="/venue/afterHOURS/">
+		<div class="venues">
+
+
+		<?php 
+			foreach ($venueList as $venueId => $venueName ){
+				echo '
+			<a class="venue" href="/venue/'.$venueId.'/">
 				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
+					<img src="/img/locations/'.$venueId.'.jpg" alt="'.$venueId.'" width="150" height="70">
 				</div>
 				<div class="venue-info">
 					<div class="venue-title">
-						afterHOURS
+						'.$venueName.'
 					</div>
 				</div>
-			</a>
-				
-			<a class="venue" href="/venue/AlumniCenter/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Alumni Center
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/Blackman/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Blackman Theater
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/CabotCage/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Cabot Cage
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/CabralCenter/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Cabral Center
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/CurryStudentCenter/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Curry Student Center
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/Henderson/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						450 Dodge
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/Egan/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Egan Research Center
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/FacultyClub/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Faculty Club
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/FenwayCenter/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Fenway Center
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/FrostLounge/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Frost Lounge
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/SummerHousing/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Housing (Summer Conferences)
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/Matthews/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Matthews Arena
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/OutdoorSpaces/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Outdoor Spaces
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/ParsonsField/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Parsons Field
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/SacredSpace/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Sacred Space
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/Snell90/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Snell Library 90
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/SolomonCourt/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Solomon Court
-					</div>
-				</div>
-			</a>
-				
-			<a class="venue" href="/venue/VarsityClub/">
-				<div class="venue-img">
-					<img src="http://placehold.it/150x70" alt="placeholder">
-				</div>
-				<div class="venue-info">
-					<div class="venue-title">
-						Varsity Club
-					</div>
-				</div>
-			</a>
+			</a>';
+			}
+		?>
 		</div>
 
 	</div>
