@@ -1,8 +1,5 @@
 $(function(){
-
 	rotateTimeout = setInterval (rotatePic, displayTime);
-
-
 
 });
 
