@@ -1,8 +1,19 @@
 #pic-span{
     margin-bottom:20px; 
-    background: url('/img/frontpg/damore_mckim.jpg') no-repeat;
+    background-color: #CCC;
     width: 960px;
     height: 296px;
+    overflow:hidden;
+    -webkit-border-radius:4px; 
+       -moz-border-radius:4px; 
+            border-radius:4px; 
+}
+
+#pic-span img{
+	position: absolute;
+	display: none;
+	
+    overflow:hidden;
     -webkit-border-radius:4px; 
        -moz-border-radius:4px; 
             border-radius:4px; 

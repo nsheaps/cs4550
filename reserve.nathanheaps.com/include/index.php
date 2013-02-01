@@ -6,7 +6,9 @@ $tpl = array(
 	'CUSTOM_CSS' => array(
 		"/css/pages/index.css"
 		),
-	'CUSTOM_JS' => array()
+	'CUSTOM_JS' => array(
+		"/js/pages/index.js"
+		)
 );
 
 
