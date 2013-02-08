@@ -22,4 +22,4 @@ RewriteRule ^venue/([a-zA-Z0-9]+)/contact$  include/venuecontact.php [L]
 
 ErrorDocument 404                           /include/errorDocs/404.php
 
-AddHandler          server-parsed           .js
+#AddHandler          server-parsed           .js

@@ -9,8 +9,12 @@ $tpl = array(
 	'PAGE_NAME' => "venuebook-". $venueId,
 	'PAGE_TITLE' => "Book " . $venueName,
 	'PAGE_HEADER' => "DO NOT USE THIS",
-	'CUSTOM_CSS' => array(),
-	'CUSTOM_JS' => array()
+	'CUSTOM_CSS' => array(
+		"/css/pages/venuebook.css"),
+	'CUSTOM_JS' => array(
+		"/js/extern/jquery.validate/1.11.0.min.js",
+		"/js/extern/jquery.validate/1.11.0.additional-methods.min.js",
+		"/js/pages/book.js")
 );
 
 

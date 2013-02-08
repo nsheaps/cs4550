@@ -1,0 +1,26 @@
+.errors ul{
+	margin: 0 0 20px 20px;
+	color: #ff0000;
+}
+
+#reservation-form #about, #reservation-form #reservation{
+	width: 49%;
+}
+#reservation-form .field{
+	min-height:  60px;
+}
+#reservation-form .field *{
+	vertical-align: top;
+}
+#reservation-form .field .field-label{
+	display:inline-block;
+	width: 120px;
+}
+#reservation-form .field input{
+	width: 300px;
+}
+#reservation-form .field label.error{
+	display:block;
+	color:#ff0000;
+	padding-left:124px;
+}

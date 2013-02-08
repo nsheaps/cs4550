@@ -162,3 +162,11 @@ a{
     text-decoration: none;
     color:#33F;
 }
+
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}

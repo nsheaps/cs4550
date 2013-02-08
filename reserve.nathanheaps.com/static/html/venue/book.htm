@@ -1,13 +1,193 @@
 <div class="content-wrapper">
-	<div class="bounding-box">
+    <div class="bounding-box">
 
-		<div class="header"><?php echo $venueName ?></div>
+        <?php 
+            $errors = array(
+                'MISSING_DATA' => 1,
+                'INVALID_DATA' => 2,
+                'NOT_ALLOWED'  => 4,
+                'NO_UUID'      => 8,
+                'NO_NAME'      => 16,
+                'NO_EMAIL'     => 32,
+                'NO_PHONE'     => 64,
+                'NO_LOCATION'  => 128,
+                'NO_DATE'      => 256,
+                'NO_TIME'      => 512,
+                'ERROR_SENDING'=> 1024
+                );
+            $errorMessages = array(
+                'MISSING_DATA' => "You're missing some data from the form. Please check it and try again.",
+                'INVALID_DATA' => "Some of the data in the form failed validation",
+                'NOT_ALLOWED'  => "You aren't allowed to make reservations. Please contact the events office directly",
+                'NO_UUID'      => "Hacking attempt",
+                'NO_NAME'      => "There was an issue with your name. Please make sure you are typing your full name.",
+                'NO_EMAIL'     => "There was an issue with your email. Please ensure that it is correct.",
+                'NO_PHONE'     => "There was an issue with your phone number. Please try again",
+                'NO_LOCATION'  => "The location was missing from your submitted form. Hacker.",
+                'NO_DATE'      => "The date submitted with your form was either missing or not valid.",
+                'NO_TIME'      => "The time submitted with your form was either missing or not valid.",
+                'ERROR_SENDING'=> "There was an error sending the email to request your reservation. Please try again later."
+                );
+            $errorCode = 0;
+            $submitted = false;
 
-		<p><strong>Booking</strong></p>
+
+            do{ //so we can stop execution at will.
+                /*we're going to want the following from the form */
+                if (isset( $_POST['name'],
+                           $_POST['email'],
+                           $_POST['phone'],
+                           $_POST['location'],
+                           $_POST['date'],
+                           $_POST['time'],
+                           $_POST['uuid'])){
+
+                    //purposly using == here to capture error as well (false is error, 0 is not found)
+                    if (preg_match('/^\w+\s\w+$/i',$_POST['name']) == false)  $errorCode += $errors['NO_NAME'] ;
+                    //use PHP's built in validation for now, fixme
+                    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) $errorCode += $errors['NO_EMAIL'] ;
+                    if (preg_match('/.+/i',$_POST['phone']) == false)  $errorCode += $errors['NO_PHONE'] ;  
+                    if (preg_match('/.+/i',$_POST['date']) == false)  $errorCode += $errors['NO_DATE'] ;  //fixme
+                    if (preg_match('/.+/i',$_POST['time']) == false)  $errorCode += $errors['NO_TIME'] ;  //fixme
+                    if (preg_match('/.+/i',$_POST['uuid']) == false)  $errorCode += $errors['NO_UUID'] ;  //fixme
+                    if (preg_match('/.+/i',$_POST['location']) == false)  $errorCode += $errors['NO_LOCATION'] ;  //fixme
+
+                    //leave this and load the form
+                    if ($errorCode > 0) break;
+
+                    //validation completed, submit the form.
+
+                    else{
+
+                        $result = @mail ("nsheaps@gmail.com", $venueName . " Reservation Request", 
+                            "A user submitted the form to request a reservation. Please respond to the request\r\n" .
+                            "within 24 hours\r\n".
+                            "Name: " . $_POST['name'] . "\r\n" .
+                            "Email Address: " . $_POST['email'] . "\r\n" .
+                            "Phone Number: " . $_POST['phone'] . "\r\n" .
+                            "Location: " . $_POST['location'] . "\r\n" .
+                            "Date: " . $_POST['date'] . "\r\n" .
+                            "Time: " . $_POST['time'] . "\r\n" .
+                            "UUID: " . $_POST['uuid'] . "\r\n",
+                            "From: " . $_POST["email"] . "\r\n" .
+                            "Reply To: " . $_POST["email"] . "\r\n" );
+
+                        if ($result){
+                            //email was sent successfully, show confirmation page.
+
+                            ?>
 
 
-		<p>The page you're looking hasn't been implemented yet!</p>
+                            <div class="header">Thanks for submitting a request to book <?php echo $venueName ?></div>
+
+                            <p>Someone from event services should be contacting you within 24 hours to confirm that your reservation doesn't conflict with anyone elses</p>
+
+                            <?php
+
+                            $submitted = true;
+                        } else {
+                            $errorCode += $errors["ERROR_SENDING"];
+                        }
+
+                    }
 
 
-	</div>
+
+
+                } else {
+
+                    //if we submitted ANYTHING, figure out errors
+                    if (!empty($_POST)){
+
+                        $errorCode += $errors['MISSING_DATA'];
+
+                        if (!isset($_POST['uuid']) || !isset($_POST['location'])) {
+                            if (!isset($_POST['uuid'])) $errorCode += $errors['NO_UUID'] ;
+                            if (!isset($_POST['location'])) $errorCode += $errors['NO_LOCATION'] ;
+                            die('Hacking attempt');
+                        }
+
+                        if (!isset($_POST['name']))  $errorCode += $errors['NO_NAME'] ;
+                        if (!isset($_POST['email'])) $errorCode += $errors['NO_EMAIL'] ;
+                        if (!isset($_POST['phone'])) $errorCode += $errors['NO_PHONE'] ;
+                        if (!isset($_POST['date']))  $errorCode += $errors['NO_DATE'] ;
+                        if (!isset($_POST['time']))  $errorCode += $errors['NO_TIME'] ;
+
+
+                    }
+
+                }                
+
+            } while (0);
+
+            if ($submitted === false){
+
+        ?>
+
+        <div class="header">Booking <?php echo $venueName ?></div>
+
+        <p>All fields marked with an asterisk are required.</p>
+
+        <?php if ($errorCode > 0){ ?>
+        <div class="errors">
+            <ul>
+            <?php
+                foreach($errors as $NAME => $errorId){
+                    if (($errorCode & $errorId) > 0){
+                        echo "<li>{$errorMessages[$NAME]}</li>";
+                    }
+                }
+            ?>
+            </ul>
+        </div>
+        <?php } ?>
+
+        <form id="reservation-form" action="./book" method="post">
+            <div  class="cf">
+                <div id="about" class="float-left">
+                    <div class="field">
+                        <label class="field-label" for="name">Full Name<sup>*</sup>:</label>
+                        <input name="name" id="name" type="text" placeholder="John Doe"
+                               data-validate="required full-name" <?php if (isset($_POST["name"])) echo "value=\"{$_POST['name']}\""; ?>/>
+                    </div>
+                    <div class="field">
+                        <label class="field-label" for="email">Email<sup>*</sup>:</label>
+                        <input name="email" id="email" type="text" placeholder="name@example.com" 
+                               data-validate="required email"  <?php if (isset($_POST["email"])) echo "value=\"{$_POST['email']}\""; ?>/>
+                    </div>
+                    <div class="field">
+                        <label class="field-label" for="phone">Phone Number<sup>*</sup>:</label>
+                        <input name="phone" id="phone" type="text" placeholder="(xxx) xxx-xxxx" 
+                               data-validate="required phone-number"  <?php if (isset($_POST["phone"])) echo "value=\"{$_POST['phone']}\""; ?>/>
+                    </div>
+                </div>
+
+                <div id="reservation" class="float-right">
+                    <div class="field">
+                        <label class="field-label" for="location">Location:</label>
+                        <input name="location" id="location" type="text" readonly
+                               data-validate="required" value="<?php echo $venueName; ?>"/>
+                    </div>
+                    <div class="field">
+                        <label class="field-label" for="date">Date<sup>*</sup>:</label>
+                        <input name="date" id="date" type="text" placeholder="MM/DD/YYYY" 
+                               data-validate="required date('mm/dd/yyyy')"  <?php if (isset($_POST["date"])) echo "value=\"{$_POST['date']}\""; ?>/>
+                    </div>
+                    <div class="field">
+                        <label class="field-label" for="time">Start and End Time<sup>*</sup>:</label>
+                        <input name="time" id="time" type="text" placeholder="8:00pm to 12:00pm" 
+                               data-validate="required time-range"  <?php if (isset($_POST["time"])) echo "value=\"{$_POST['time']}\""; ?>/>
+                    </div>
+                </div>
+            </div>  
+
+            <input type="hidden" name="uuid" id="uuid"  <?php if (isset($_POST["uuid"])) echo "value=\"{$_POST['uuid']}\""; else echo "value=\"{uniqid();}\"" ?>/>
+
+            <input type="submit" value="Submit" />
+
+        </form>
+
+        <?php } // end if !submitted ?>
+
+    </div>
 </div>
