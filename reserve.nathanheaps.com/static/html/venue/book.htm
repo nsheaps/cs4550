@@ -2,6 +2,73 @@
     <div class="bounding-box">
 
         <?php 
+		
+			// A function that checks to see if
+			// an email is valid
+			function validEmail($email)
+			{
+			   $isValid = true;
+			   $atIndex = strrpos($email, "@");
+			   if (is_bool($atIndex) && !$atIndex)
+			   {
+				  $isValid = false;
+			   }
+			   else
+			   {
+				  $domain = substr($email, $atIndex+1);
+				  $local = substr($email, 0, $atIndex);
+				  $localLen = strlen($local);
+				  $domainLen = strlen($domain);
+				  if ($localLen < 1 || $localLen > 64)
+				  {
+					 // local part length exceeded
+					 $isValid = false;
+				  }
+				  else if ($domainLen < 1 || $domainLen > 255)
+				  {
+					 // domain part length exceeded
+					 $isValid = false;
+				  }
+				  else if ($local[0] == '.' || $local[$localLen-1] == '.')
+				  {
+					 // local part starts or ends with '.'
+					 $isValid = false;
+				  }
+				  else if (preg_match('/\\.\\./', $local))
+				  {
+					 // local part has two consecutive dots
+					 $isValid = false;
+				  }
+				  else if (!preg_match('/^[A-Za-z0-9\\-\\.]+$/', $domain))
+				  {
+					 // character not valid in domain part
+					 $isValid = false;
+				  }
+				  else if (preg_match('/\\.\\./', $domain))
+				  {
+					 // domain part has two consecutive dots
+					 $isValid = false;
+				  }
+				  else if(!preg_match('/^(\\\\.|[A-Za-z0-9!#%&`_=\\/$\'*+?^{}|~.-])+$/',
+							 str_replace("\\\\","",$local)))
+				  {
+					 // character not valid in local part unless
+					 // local part is quoted
+					 if (!preg_match('/^"(\\\\"|[^"])+"$/',
+						 str_replace("\\\\","",$local)))
+					 {
+						$isValid = false;
+					 }
+				  }
+				  if ($isValid && !(checkdnsrr($domain,"MX") || checkdnsrr($domain,"A")))
+				  {
+					 // domain not found in DNS
+					 $isValid = false;
+				  }
+			   }
+			   return $isValid;
+			}
+
             $errors = array(
                 'MISSING_DATA' => 1,
                 'INVALID_DATA' => 2,
@@ -13,7 +80,9 @@
                 'NO_LOCATION'  => 128,
                 'NO_DATE'      => 256,
                 'NO_TIME'      => 512,
-                'ERROR_SENDING'=> 1024
+                'ERROR_SENDING'=> 1024,
+				'INVALID_EMAIL'=> 2048,
+				'RESERVED'     => 4096
                 );
             $errorMessages = array(
                 'MISSING_DATA' => "You're missing some data from the form. Please check it and try again.",
@@ -26,7 +95,9 @@
                 'NO_LOCATION'  => "The location was missing from your submitted form. Hacker.",
                 'NO_DATE'      => "The date submitted with your form was either missing or not valid.",
                 'NO_TIME'      => "The time submitted with your form was either missing or not valid.",
-                'ERROR_SENDING'=> "There was an error sending the email to request your reservation. Please try again later."
+                'ERROR_SENDING'=> "There was an error sending the email to request your reservation. Please try again later.",
+				'INVALID_EMAIL'=> "The email you provided didn't pass validation. Please choose a different email and try again.",
+				'RESERVED'     => "That location has already been reserved for the date selected. Please try a different location or date."
                 );
             $errorCode = 0;
             $submitted = false;
@@ -39,25 +110,66 @@
                            $_POST['phone'],
                            $_POST['location'],
                            $_POST['date'],
-                           $_POST['time'],
                            $_POST['uuid'])){
 
                     //purposly using == here to capture error as well (false is error, 0 is not found)
                     if (preg_match('/^\w+\s\w+$/i',$_POST['name']) == false)  $errorCode += $errors['NO_NAME'] ;
                     //use PHP's built in validation for now, fixme
                     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) $errorCode += $errors['NO_EMAIL'] ;
+					if (!validEmail($_POST['email'])) $errorCode += $errors['INVALID_EMAIL'];
                     if (preg_match('/.+/i',$_POST['phone']) == false)  $errorCode += $errors['NO_PHONE'] ;  
                     if (preg_match('/.+/i',$_POST['date']) == false)  $errorCode += $errors['NO_DATE'] ;  //fixme
-                    if (preg_match('/.+/i',$_POST['time']) == false)  $errorCode += $errors['NO_TIME'] ;  //fixme
                     if (preg_match('/.+/i',$_POST['uuid']) == false)  $errorCode += $errors['NO_UUID'] ;  //fixme
                     if (preg_match('/.+/i',$_POST['location']) == false)  $errorCode += $errors['NO_LOCATION'] ;  //fixme
 
                     //leave this and load the form
                     if ($errorCode > 0) break;
 
-                    //validation completed, submit the form.
+
 
                     else{
+					
+						//validation completed, check that there isn't already a reservation.
+					
+						 
+                        $dbc = mysql_connect('xxxxxxxxx.xxxxxxxx.com', 'xxxuserxxx', 'xxxpasswordxxx'); 
+						if (!$dbc) { 
+							die('Could not connect: ' . mysql_error()); 
+						} 
+						
+						// Set the encoding...
+						mysql_set_charset($dbc, 'utf8');
+						
+						// Connect to the Database
+						$q = "USE reservations";	
+						$r = @mysql_query ($dbc, $q); // Run the query.
+						
+						$sqldate = date("Y-m-d H:i:s", strtotime($_POST['date']));
+						$name = mysql_real_escape_string($_POST['name']);
+						$email = mysql_real_escape_string($_POST['email']);
+						$phone = mysql_real_escape_string($_POST['phone']);
+						$location = mysql_real_escape_string($_POST['location']);
+						
+						$q = "SELECT * FROM nsh_reservations.reservations WHERE date='$sqldate' AND location='$location'";
+						$result=mysql_query($q);
+
+						if (mysql_num_rows($result) > 0){
+							//already reserved
+							 $errorCode += $errors['RESERVED'];
+							 break;
+						} else {
+							//make the reservation
+                            //$sqldate = $_POST['date'];
+							$q = "INSERT INTO nsh_reservations.reservations (name, email, phone, location, date) VALUES('$name', '$email', '$phone', '$location', '$sqldate')";
+							$result=mysql_query($q);
+							if (!$result) die("Failed to insert reservation into db");
+						}
+						
+						//$q = "SELECT count(*) as count FROM reservations WHERE
+						
+						
+						
+						
 
                         $result = @mail ("nsheaps@gmail.com", $venueName . " Reservation Request", 
                             "A user submitted the form to request a reservation. Please respond to the request\r\n" .
@@ -71,6 +183,10 @@
                             "UUID: " . $_POST['uuid'] . "\r\n",
                             "From: " . $_POST["email"] . "\r\n" .
                             "Reply To: " . $_POST["email"] . "\r\n" );
+							
+                        $result &= @mail ($_POST["email"], $venueName . " Reservation Request", 
+                            "Thank's for your submission. Someone from Northeastern Event's should be" . 
+							"contacting you within 24 hours regarding your request");
 
                         if ($result){
                             //email was sent successfully, show confirmation page.
@@ -111,7 +227,6 @@
                         if (!isset($_POST['email'])) $errorCode += $errors['NO_EMAIL'] ;
                         if (!isset($_POST['phone'])) $errorCode += $errors['NO_PHONE'] ;
                         if (!isset($_POST['date']))  $errorCode += $errors['NO_DATE'] ;
-                        if (!isset($_POST['time']))  $errorCode += $errors['NO_TIME'] ;
 
 
                     }
@@ -148,17 +263,17 @@
                     <div class="field">
                         <label class="field-label" for="name">Full Name<sup>*</sup>:</label>
                         <input name="name" id="name" type="text" placeholder="John Doe"
-                               data-validate="required full-name" <?php if (isset($_POST["name"])) echo "value=\"{$_POST['name']}\""; ?>/>
+                               maxlength="255" data-validate="required full-name" <?php if (isset($_POST["name"])) echo "value=\"{$_POST['name']}\""; ?>/>
                     </div>
                     <div class="field">
                         <label class="field-label" for="email">Email<sup>*</sup>:</label>
                         <input name="email" id="email" type="text" placeholder="name@example.com" 
-                               data-validate="required email"  <?php if (isset($_POST["email"])) echo "value=\"{$_POST['email']}\""; ?>/>
+                               maxlength="255" data-validate="required email"  <?php if (isset($_POST["email"])) echo "value=\"{$_POST['email']}\""; ?>/>
                     </div>
                     <div class="field">
                         <label class="field-label" for="phone">Phone Number<sup>*</sup>:</label>
                         <input name="phone" id="phone" type="text" placeholder="(xxx) xxx-xxxx" 
-                               data-validate="required phone-number"  <?php if (isset($_POST["phone"])) echo "value=\"{$_POST['phone']}\""; ?>/>
+                               maxlength="20" data-validate="required phone-number"  <?php if (isset($_POST["phone"])) echo "value=\"{$_POST['phone']}\""; ?>/>
                     </div>
                 </div>
 
@@ -173,11 +288,6 @@
                         <input name="date" id="date" type="text" placeholder="MM/DD/YYYY" 
                                data-validate="required date('mm/dd/yyyy')"  <?php if (isset($_POST["date"])) echo "value=\"{$_POST['date']}\""; ?>/>
                     </div>
-                    <div class="field">
-                        <label class="field-label" for="time">Start and End Time<sup>*</sup>:</label>
-                        <input name="time" id="time" type="text" placeholder="8:00pm to 12:00pm" 
-                               data-validate="required time-range"  <?php if (isset($_POST["time"])) echo "value=\"{$_POST['time']}\""; ?>/>
-                    </div>
                 </div>
             </div>  
 
@@ -186,6 +296,15 @@
             <input type="submit" value="Submit" />
 
         </form>
+		
+		<script type="text/javascript">
+			$(function(){
+				$("#date").datepicker({
+					minDate: "+1D",
+					maxDate: "+1Y"
+				});
+			});
+		</script>
 
         <?php } // end if !submitted ?>
 

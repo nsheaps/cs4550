@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"text-",
+				"text-decoration"
+			],
+			[
 				"list",
 				"list-style-type"
 			]
@@ -12,54 +16,18 @@
 	"buffers":
 	[
 		{
-			"file": "reserve.nathanheaps.com/.htaccess",
+			"file": "reserve.nathanheaps.com/include/venuebook.php",
 			"settings":
 			{
-				"buffer_size": 625,
+				"buffer_size": 606,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "reserve.nathanheaps.com/static/html/venues.htm",
+			"file": "reserve.nathanheaps.com/static/html/venue/book.htm",
 			"settings":
 			{
-				"buffer_size": 9562,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "reserve.nathanheaps.com/static/html/index.htm",
-			"settings":
-			{
-				"buffer_size": 8326,
-				"line_ending": "Windows",
-				"name": "index.html"
-			}
-		},
-		{
-			"file": "reserve.nathanheaps.com/static/css/neu1.css",
-			"settings":
-			{
-				"buffer_size": 14168,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "reserve.nathanheaps.com/static/css/events.css",
-			"settings":
-			{
-				"buffer_size": 6103,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "#reservationSystem{\n	margin-top: 10px;\n	padding-left: 10px;\n}\n\n",
-			"file": "reserve.nathanheaps.com/static/css/venuereservation.css",
-			"file_size": 64,
-			"file_write_time": 130032170014514403,
-			"settings":
-			{
-				"buffer_size": 63,
+				"buffer_size": 9471,
 				"line_ending": "Windows"
 			}
 		}
@@ -67,9 +35,29 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 196.0,
 		"selected_items":
 		[
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"git custom",
+				"Git: Custom Command"
+			],
 			[
 				"package",
 				"Package Control: Install Package"
@@ -147,10 +135,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"git custom",
-				"Git: Custom Command"
-			],
-			[
 				"git commi",
 				"Git: Commit"
 			],
@@ -200,11 +184,59 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Nathan/Dropbox/Web Development/cs4550/cs4550.sublime-project",
-		"/C/Users/Nathan/Dropbox/Web Development/cs4550/test.sublime-build",
-		"/C/Users/Nathan/Dropbox/Web Development/cs4550/ci.nathanheaps.com/.htaccess",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/pages/book.js",
+		"/C/Users/Nathan/Dropbox/Books - NU/Organizational Behavior/2-18-12 Readings/readings.txt",
+		"/C/Users/Nathan/Dropbox/Books - NU/Organizational Behavior/Readings for 2-26-13.txt",
+		"/C/Users/Nathan/AppData/Local/Temp/Temp1_microsoft-office-home-student-3452c285.zip/3452c285.txt",
+		"/C/Users/Nathan/Dropbox/Books - NU/Organizational Behavior/Readings for 3-1-13.txt",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/extern/jquery.validate/1.11.0.additional-methods.min.js",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/extern/jquery.validate/1.11.0.additional-methods.js",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/extern/jquery.validate/1.11.0.min.js",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/extern/jquery.validate/1.11.0.js",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/header.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/venue/book.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/venuebook.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/errorDocs/404.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/errorDocs/404.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/venuelist.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/venuemap.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/venue/afterHOURS/venueContact.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/credits.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/index.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/credits.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/extern/jquery/1.9.0.js",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/extern/jquery/1.9.0.min.js",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/venuecontact.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/.htaccess",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/index.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/css/pages/index.css",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/master.js",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/venue/afterHOURS/venueInfo.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/js/pages/index.js",
+		"/C/Users/Nathan/AppData/Local/Temp/fz3temp-2/venuedetails.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/venuedetails.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/css/master.css",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/venues.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/footer.htm",
+		"/C/Users/Nathan/AppData/Local/Temp/fz3temp-3/.htaccess",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/contact.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/css/pages/venuelist.css",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/contact.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/temp.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/venue/afterHours/venueContact.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/venueconfirm.php",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/account.php",
+		"/C/Users/Nathan/AppData/Local/Temp/fz3temp-2/index.html",
+		"/C/Users/Nathan/Dropbox/Books - NU/Organizational Behavior/Jan 22 readings.txt",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/static/html/venue/afterHours/venueInfo.htm",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/nathanheaps.com/index.html",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/include/route.php",
+		"/C/Users/Nathan/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Nathan/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/Users/Nathan/Dropbox/Web Development/n8heaps.com/res/img/social_icons/16px/facebook.png",
 		"/C/Users/Nathan/Dropbox/Web Development/cs4550/reserve.nathanheaps.com/index.html",
-		"/C/Users/Nathan/AppData/Roaming/Sublime Text 2/Packages/User/open cmd prompt.sublime-build",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/ci.nathanheaps.com/.htaccess",
+		"/C/Users/Nathan/Dropbox/Web Development/cs4550/test.sublime-build",
 		"/C/Users/Nathan/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/Users/Nathan/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
 		"/C/Users/Nathan/Dropbox/Web Development/cs4550/ci.nathanheaps.com/src/config/cintient.conf.php",
@@ -228,9 +260,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"twoco",
-			"/img",
-			"images",
+			"			<a class=\"venue\" href=\"/venue/(.*?)/\">\n				<div class=\"venue-img\">\n					<img src=\".*\" alt=\".*\" width=\"150\" height=\"70\">\n				</div>\n				<div class=\"venue-info\">\n					<div class=\"venue-title\">\n						(.*?)\n					</div>\n				</div>\n			</a>\n			",
+			"			<a class=\"venue\" href=\"/venue/(.*?)/\">\n				<div class=\"venue-img\">\n					<img src=\".*\" alt=\".*\" width=\"150\" height=\"70\">\n				</div>\n				<div class=\"venue-info\">\n					<div class=\"venue-title\">\n						(.*?)\n					</div>\n				</div>\n			</a>",
+			"			<a class=\"venue\" href=\"/venue/(.*?)/\">\n				<div class=\"venue-img\">\n					<img src=\"/img/locations/afterHOURS.jpg\" alt=\"afterHOURS\" width=\"150\" height=\"70\">\n				</div>\n				<div class=\"venue-info\">\n					<div class=\"venue-title\">\n						(.*?)\n					</div>\n				</div>\n			</a>",
+			"			<a class=\"venue\" href=\"/venue/.*?/\">\n				<div class=\"venue-img\">\n					<img src=\"/img/locations/afterHOURS.jpg\" alt=\"afterHOURS\" width=\"150\" height=\"70\">\n				</div>\n				<div class=\"venue-info\">\n					<div class=\"venue-title\">\n						.*?\n					</div>\n				</div>\n			</a>",
+			" alt=\"placeholder\">",
+			"<li><a href=\\\"(.*?)\\\">(.*?)</a> </li>",
+			"<li><a href=\\\".*\\\">.*</a> </li>",
+			">",
+			"		</",
 			".htaccess",
 			"apache_get",
 			"get_dnode",
@@ -239,9 +277,14 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"\"$1\" => \"$2\",",
+			" alt=\"placeholder\" width=\"150\" height=\"70\">",
+			"\n			<a class=\"venue\" href=\"\\1\">\n				<div class=\"venue-img\">\n					<img src=\"http://placehold.it/150x70\" alt=\"placeholder\">\n				</div>\n				<div class=\"venue-info\">\n					<div class=\"venue-title\">\n						$2\n					</div>\n				</div>\n			</a>",
+			"\n			<a class=\"venue\" href=\"$1\">\n				<div class=\"venue-img\">\n					<img src=\"http://placehold.it/150x70\" alt=\"placeholder\">\n				</div>\n				<div class=\"venue-info\">\n					<div class=\"venue-title\">\n						$2\n					</div>\n				</div>\n			</a>",
+			">\\n"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -257,23 +300,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "reserve.nathanheaps.com/.htaccess",
+					"file": "reserve.nathanheaps.com/include/venuebook.php",
 					"settings":
 					{
-						"buffer_size": 625,
+						"buffer_size": 606,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								482,
+								482
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -283,135 +326,28 @@
 				},
 				{
 					"buffer": 1,
-					"file": "reserve.nathanheaps.com/static/html/venues.htm",
+					"file": "reserve.nathanheaps.com/static/html/venue/book.htm",
 					"settings":
 					{
-						"buffer_size": 9562,
+						"buffer_size": 9471,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3672,
+								3672
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "reserve.nathanheaps.com/static/html/index.htm",
-					"settings":
-					{
-						"buffer_size": 8326,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "index.html",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1593.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "reserve.nathanheaps.com/static/css/neu1.css",
-					"settings":
-					{
-						"buffer_size": 14168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3876,
-								3883
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4654.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "reserve.nathanheaps.com/static/css/events.css",
-					"settings":
-					{
-						"buffer_size": 6103,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4301,
-								4262
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4285.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "reserve.nathanheaps.com/static/css/venuereservation.css",
-					"settings":
-					{
-						"buffer_size": 63,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								63,
-								63
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -450,10 +386,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 201.0
-	},
 	"output.git":
 	{
 		"height": 124.0
@@ -464,7 +396,7 @@
 	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 173.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -487,6 +419,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 198.0,
+	"side_bar_width": 296.0,
 	"status_bar_visible": true
 }
